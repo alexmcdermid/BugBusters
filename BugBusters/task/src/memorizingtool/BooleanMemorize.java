@@ -13,38 +13,67 @@ import java.util.*;
  We can now rely on the trustworthy BooleanMemorize class to keep our Booleans intact. I can't wait to use it in my next project!
  */
 public class BooleanMemorize {
-  static    ArrayList<Boolean>    list   =  new    ArrayList<>();
-  boolean     finished  =  false;
-  static  List<Object>   args  =   new  ArrayList<>();
-  static  Map<String,    Class<?>[]>   commands;
-  //Once upon a time in a small village nestled between rolling hills, there lived...
+
+  static ArrayList<Boolean> list = new ArrayList<>();
+  boolean finished = false;
+  static  List<Object> args = new ArrayList<>();
+  static  Map<String, Class<?>[]> commands;
+
   public BooleanMemorize() {
     list.clear();
-    commands = new HashMap<>();    commands.put("/help", new Class<?>[]{});    commands.put("/menu", new Class<?>[]{});    commands.put("/add", new Class<?>[]{Boolean.class});    commands.put("/remove", new Class<?>[]{int.class});    commands.put("/replace", new Class<?>[]{int.class, Boolean.class});    commands.put("/replaceAll", new Class<?>[]{Boolean.class, Boolean.class});    commands.put("/index", new Class<?>[]{Boolean.class});    commands.put("/sort", new Class<?>[]{String.class});    commands.put("/frequency", new Class<?>[]{});    commands.put("/print", new Class<?>[]{int.class});    commands.put("/printAll", new Class<?>[]{String.class});    commands.put("/getRandom", new Class<?>[]{});    commands.put("/count", new Class<?>[]{Boolean.class});    commands.put("/size", new Class<?>[]{});    commands.put("/equals", new Class<?>[]{int.class, int.class});    commands.put("/readFile", new Class<?>[]{String.class});    commands.put("/writeFile", new Class<?>[]{String.class});    commands.put("/clear", new Class<?>[]{});    commands.put("/compare", new Class<?>[]{int.class, int.class});    commands.put("/mirror", new Class<?>[]{});    commands.put("/unique", new Class<?>[]{});    commands.put("/flip", new Class<?>[]{int.class});    commands.put("/negateAll", new Class<?>[]{});    commands.put("/and", new Class<?>[]{int.class, int.class});    commands.put("/or", new Class<?>[]{int.class, int.class});    commands.put("/logShift", new Class<?>[]{int.class});    commands.put("/convertTo", new Class<?>[]{String.class});    commands.put("/morse", new Class<?>[]{});
+    commands = new HashMap<>();
+    commands.put("/help", new Class<?>[]{});
+    commands.put("/menu", new Class<?>[]{});
+    commands.put("/add", new Class<?>[]{Boolean.class});
+    commands.put("/remove", new Class<?>[]{int.class});
+    commands.put("/replace", new Class<?>[]{int.class, Boolean.class});
+    commands.put("/replaceAll", new Class<?>[]{Boolean.class, Boolean.class});
+    commands.put("/index", new Class<?>[]{Boolean.class});
+    commands.put("/sort", new Class<?>[]{String.class});
+    commands.put("/frequency", new Class<?>[]{});
+    commands.put("/print", new Class<?>[]{int.class});
+    commands.put("/printAll", new Class<?>[]{String.class});
+    commands.put("/getRandom", new Class<?>[]{});
+    commands.put("/count", new Class<?>[]{Boolean.class});
+    commands.put("/size", new Class<?>[]{});
+    commands.put("/equals", new Class<?>[]{int.class, int.class});
+    commands.put("/readFile", new Class<?>[]{String.class});
+    commands.put("/writeFile", new Class<?>[]{String.class});
+    commands.put("/clear", new Class<?>[]{});
+    commands.put("/compare", new Class<?>[]{int.class, int.class});
+    commands.put("/mirror", new Class<?>[]{});
+    commands.put("/unique", new Class<?>[]{});
+    commands.put("/flip", new Class<?>[]{int.class});
+    commands.put("/negateAll", new Class<?>[]{});
+    commands.put("/and", new Class<?>[]{int.class, int.class});
+    commands.put("/or", new Class<?>[]{int.class, int.class});
+    commands.put("/logShift", new Class<?>[]{int.class});
+    commands.put("/convertTo", new Class<?>[]{String.class});
+    commands.put("/morse", new Class<?>[]{});
   }
 
-  void      Run() throws      NoSuchMethodException,   InvocationTargetException,  IllegalAccessException {
-    Scanner    scanner  =  new  Scanner(System.in);
-    while     (!finished) {
+  void Run() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    Scanner scanner = new Scanner(System.in);
+    while (!finished) {
       args.clear();
       System.out.println("Perform action:");
-      String[]  data  =  scanner.nextLine().split(" ");
+      String[] data = scanner.nextLine().split(" ");
 
-      for  (int  i  =  1;  i  <  data.length;  i++) {
-        if  (commands.get(data[0])[i - 1].equals(int.class))
+      for (int  i  =  1;  i  <  data.length;  i++) {
+        if (commands.get(data[0])[i - 1].equals(int.class))
           args.add(Integer.parseInt(data[i]));
-        else  if  (commands.get(data[0])[i - 1].equals(Boolean.class)) {
+        else if (commands.get(data[0])[i - 1].equals(Boolean.class)) {
           args.add(data[i].equals("true"));
-        }  else  {
+        } else {
           args.add(data[i]);
         }
       }
 
-      this.getClass().getDeclaredMethod(data[0].substring(1), commands.get(data[0]))  .  invoke(this, args.toArray());
+      this.getClass().getDeclaredMethod(data[0].substring(1), commands.get(data[0])).invoke(this, args.toArray());
     }
   }
 
-  void help() {//a curious young girl named Lily. Lily had a heart full of...
+  void help() {
     System.out.println(
             "===================================================================================================================\n" +
                     "Usage: COMMAND [<TYPE> PARAMETERS]\n" +

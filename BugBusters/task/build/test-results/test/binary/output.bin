@@ -1,0 +1,3192 @@
+[1;31m
+Start test 1[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 0
+[1;31m
+Start test 2[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+[1;31m
+Start test 3[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+[1;31m
+Start test 4[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+[1;31m
+Start test 5[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /help
+t===================================================================================================================
+#Usage: COMMAND [<TYPE> PARAMETERS]
+t===================================================================================================================
+General commands:
+t===================================================================================================================
+"/help - Display this help message
+/menu - Return to the menu
+
+;/add [<T> ELEMENT] - Add the specified element to the list
+P/remove [<int> INDEX] - Remove the element at the specified index from the list
+_/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one
+`/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one
+
+P/index [<T> ELEMENT] - Get the index of the first specified element in the list
+N/sort [ascending/descending] - Sort the list in ascending or descending order
+=/frequency - The frequency count of each element in the list
+L/print [<int> INDEX] - Print the element at the specified index in the list
+[/printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format
+0/getRandom - Get a random element from the list
+\/count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list
+//size - Get the number of elements in the list
+H/equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal
++/clear - Remove all elements from the list
+]/compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list
+-/mirror - Mirror elements' positions in list
+&/unique - Unique elements in the list
+[/readFile [<string> FILENAME] - Import data from the specified file and add it to the list
+M/writeFile [<string> FILENAME] - Export the list data to the specified file
+t===================================================================================================================
+Boolean-specific commands:
+t===================================================================================================================
+1/flip [<int> INDEX] - Flip the specified boolean
+//negateAll - Negate all the booleans in memory
+]/and [<int> INDEX1] [<int> INDEX2] - Calculate the bitwise AND of the two specified elements
+[/or [<int> INDEX1] [<int> INDEX2] - Calculate the bitwise OR of the two specified elements
+^/logShift [<int> NUM] - Perform a logical shift of elements in memory by the specified amount
+_/convertTo [string/number] - Convert the boolean(bit) sequence in memory to the specified type
+9/morse - Convert the boolean(bit) sequence to Morse code
+u===================================================================================================================
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /writeFile data.txt
+Data exported: 1
+Perform action:
+> /readFile data.txt
+Data imported: 2
+Perform action:
+> /size
+Amount of elements: 2
+Perform action:
+> /frequency
+Frequency:
+	true: 2
+Perform action:
+> /print 0
+Element on 0 position is true
+Perform action:
+> /printAll asList
+List of elements:
+[true, true]
+Perform action:
+> /getRandom
+Random element: true
+Perform action:
+> /equals 0 1
+(0 and 1 elements are equal: true = true
+Perform action:
+> /sort ascending
+Memory sorted ascending
+Perform action:
+> /index true
++First occurrence of true is on 0 position
+Perform action:
+> /count true
+Amount of true: 2
+Perform action:
+> /compare 0 1
+Result: true = true
+Perform action:
+
+> /mirror
+Data reversed
+Perform action:
+
+> /unique
+Unique values: [true]
+Perform action:
+
+> /flip 0
+Element on 0 position flipped
+Perform action:
+> /negateAll
+All elements negated
+Perform action:
+> /and 0 1
+-Operation performed: (true && false) is true
+Perform action:
+
+> /or 0 1
+.Operation performed: (true || false) is false
+Perform action:
+> /logShift 0
+Elements shifted by 0
+Perform action:
+> /convertTo number
+Converted: 2
+Perform action:
+	> /morse
+Morse code: ._
+Perform action:
+> /replace 0 true
+*Element on 0 position replaced with true
+Perform action:
+> /replaceAll true true
+&Each true element replaced with true
+Perform action:
+> /remove 0
+Element on 0 position removed
+Perform action:
+	> /clear
+Data cleared
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 0
+[1;31m
+Start test 6[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+> /help
+t===================================================================================================================
+#Usage: COMMAND [<TYPE> PARAMETERS]
+t===================================================================================================================
+General commands:
+t===================================================================================================================
+"/help - Display this help message
+/menu - Return to the menu
+
+;/add [<T> ELEMENT] - Add the specified element to the list
+P/remove [<int> INDEX] - Remove the element at the specified index from the list
+_/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one
+`/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one
+
+P/index [<T> ELEMENT] - Get the index of the first specified element in the list
+N/sort [ascending/descending] - Sort the list in ascending or descending order
+=/frequency - The frequency count of each element in the list
+L/print [<int> INDEX] - Print the element at the specified index in the list
+[/printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format
+0/getRandom - Get a random element from the list
+\/count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list
+//size - Get the number of elements in the list
+H/equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal
++/clear - Remove all elements from the list
+]/compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list
+-/mirror - Mirror elements' positions in list
+&/unique - Unique elements in the list
+[/readFile [<string> FILENAME] - Import data from the specified file and add it to the list
+M/writeFile [<string> FILENAME] - Export the list data to the specified file
+t===================================================================================================================
+Number-specific commands:
+t===================================================================================================================
+U/sum [<int> INDEX1] [<int> INDEX2] - Calculate the sum of the two specified elements
+f/subtract [<int> INDEX1] [<int> INDEX2] - Calculate the difference between the two specified elements
+^/multiply [<int> INDEX1] [<int> INDEX2] - Calculate the product of the two specified elements
+]/divide [<int> INDEX1] [<int> INDEX2] - Calculate the division of the two specified elements
+t/pow [<int> INDEX1] [<int> INDEX2] - Calculate the power of the specified element to the specified exponent element
+L/factorial [<int> INDEX] - Calculate the factorial of the specified element
+,/sumAll - Calculate the sum of all elements
+1/average - Calculate the average of all elements
+u===================================================================================================================
+Perform action:
+	> /add 1
+Element 1 added
+Perform action:
+> /writeFile data.txt
+Data exported: 1
+Perform action:
+> /readFile data.txt
+Data imported: 2
+Perform action:
+> /size
+Amount of elements: 2
+Perform action:
+> /frequency
+Frequency:
+1: 2
+Perform action:
+> /print 0
+Element on 0 position is 1
+Perform action:
+> /printAll asList
+List of elements:
+[1, 1]
+Perform action:
+> /getRandom
+Random element: 1
+Perform action:
+> /equals 0 1
+"0 and 1 elements are equal: 1 = 1
+Perform action:
+> /sort ascending
+Memory sorted ascending
+Perform action:
+> /index 1
+(First occurrence of 1 is on 0 position
+Perform action:
+> /count 1
+Amount of 1: 2
+Perform action:
+> /compare 0 1
+Result: 1 = 1
+Perform action:
+
+> /mirror
+Data reversed
+Perform action:
+
+> /unique
+Unique values: [1]
+Perform action:
+> /sum 0 1
+!Calculation performed: 1 + 1 = 2
+Perform action:
+> /subtract 0 1
+!Calculation performed: 1 - 1 = 0
+Perform action:
+> /multiply 0 1
+!Calculation performed: 1 * 1 = 1
+Perform action:
+> /divide 0 1
+!Calculation performed: 1 / 1 = 1
+Perform action:
+> /pow 0 1
+!Calculation performed: 1 ^ 1 = 1
+Perform action:
+> /factorial 0
+Calculation performed: 1! = 2
+Perform action:
+
+> /sumAll
+Sum of all elements: 2
+Perform action:
+> /average
+Average of all elements: 1
+Perform action:
+> /replace 0 1
+'Element on 0 position replaced with 1
+Perform action:
+> /replaceAll 1 1
+ Each 1 element replaced with 1
+Perform action:
+> /remove 0
+Element on 0 position removed
+Perform action:
+	> /clear
+Data cleared
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 0
+[1;31m
+Start test 7[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /help
+t===================================================================================================================
+#Usage: COMMAND [<TYPE> PARAMETERS]
+t===================================================================================================================
+General commands:
+t===================================================================================================================
+"/help - Display this help message
+/menu - Return to the menu
+
+;/add [<T> ELEMENT] - Add the specified element to the list
+P/remove [<int> INDEX] - Remove the element at the specified index from the list
+_/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one
+`/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one
+
+P/index [<T> ELEMENT] - Get the index of the first specified element in the list
+N/sort [ascending/descending] - Sort the list in ascending or descending order
+=/frequency - The frequency count of each element in the list
+L/print [<int> INDEX] - Print the element at the specified index in the list
+[/printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format
+0/getRandom - Get a random element from the list
+\/count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list
+//size - Get the number of elements in the list
+H/equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal
++/clear - Remove all elements from the list
+]/compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list
+-/mirror - Mirror elements' positions in list
+&/unique - Unique elements in the list
+[/readFile [<string> FILENAME] - Import data from the specified file and add it to the list
+M/writeFile [<string> FILENAME] - Export the list data to the specified file
+t===================================================================================================================
+Word-specific commands:
+t===================================================================================================================
+H/concat [<int> INDEX1] [<int> INDEX2] Concatenate two specified strings
+L/swapCase [<int> INDEX] Output swapped case version of the specified string
+F/upper [<int> INDEX] Output uppercase version of the specified string
+F/lower [<int> INDEX] Output lowercase version of the specified string
+G/reverse [<int> INDEX] Output reversed version of the specified string
+=/length [<int> INDEX] Get the length of the specified string
+M/join [<string> DELIMITER] Join all the strings with the specified delimiter
+f/regex [<string> PATTERN] Search for all elements that match the specified regular expression pattern
+u===================================================================================================================
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /writeFile data.txt
+Data exported: 1
+Perform action:
+> /readFile data.txt
+Data imported: 2
+Perform action:
+> /size
+Amount of elements: 2
+Perform action:
+> /frequency
+Frequency:
+CakeIsALie: 2
+Perform action:
+> /print 0
+%Element on 0 position is CakeIsALie
+Perform action:
+> /printAll asList
+List of elements:
+[CakeIsALie, CakeIsALie]
+Perform action:
+> /getRandom
+Random element: CakeIsALie
+Perform action:
+> /equals 0 1
+40 and 1 elements are equal: CakeIsALie = CakeIsALie
+Perform action:
+> /sort ascending
+Memory sorted ascending
+Perform action:
+> /index CakeIsALie
+1First occurrence of CakeIsALie is on 0 position
+Perform action:
+> /count CakeIsALie
+Amount of CakeIsALie: 2
+Perform action:
+> /compare 0 1
+!Result: CakeIsALie = CakeIsALie
+Perform action:
+
+> /mirror
+Data reversed
+Perform action:
+
+> /unique
+Unique values: [CakeIsALie]
+Perform action:
+> /concat 0 1
++Concatenated string: CakeIsALieCakeIsALie
+Perform action:
+> /swapCase 0
+3"CakeIsALie" string with swapped case: CAKEISALIE
+Perform action:
+> /upper 0
+*Uppercase "CakeIsALie" string: CAKEISALIE
+Perform action:
+> /lower 0
+*Lowercase "CakeIsALie" string: cakeisalie
+Perform action:
+> /reverse 0
+)Reversed "CakeIsALie" string: eiLAsIekaC
+Perform action:
+> /length 0
+"Length of "CakeIsALie" string: 10
+Perform action:
+
+> /join _
+%Joined string: CakeIsALie_CakeIsALie
+Perform action:
+> /regex .+
+$Strings that match provided regex:
+[CakeIsALie, CakeIsALie]
+Perform action:
+> /replace 0 CakeIsALie
+0Element on 0 position replaced with CakeIsALie
+Perform action:
+$> /replaceAll CakeIsALie CakeIsALie
+2Each CakeIsALie element replaced with CakeIsALie
+Perform action:
+> /remove 0
+Element on 0 position removed
+Perform action:
+	> /clear
+Data cleared
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 0
+[1;31m
+Start test 8[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /help
+t===================================================================================================================
+#Usage: COMMAND [<TYPE> PARAMETERS]
+t===================================================================================================================
+General commands:
+t===================================================================================================================
+"/help - Display this help message
+/menu - Return to the menu
+
+;/add [<T> ELEMENT] - Add the specified element to the list
+P/remove [<int> INDEX] - Remove the element at the specified index from the list
+_/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one
+`/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one
+
+P/index [<T> ELEMENT] - Get the index of the first specified element in the list
+N/sort [ascending/descending] - Sort the list in ascending or descending order
+=/frequency - The frequency count of each element in the list
+L/print [<int> INDEX] - Print the element at the specified index in the list
+[/printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format
+0/getRandom - Get a random element from the list
+\/count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list
+//size - Get the number of elements in the list
+H/equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal
++/clear - Remove all elements from the list
+]/compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list
+-/mirror - Mirror elements' positions in list
+&/unique - Unique elements in the list
+[/readFile [<string> FILENAME] - Import data from the specified file and add it to the list
+M/writeFile [<string> FILENAME] - Export the list data to the specified file
+t===================================================================================================================
+Boolean-specific commands:
+t===================================================================================================================
+1/flip [<int> INDEX] - Flip the specified boolean
+//negateAll - Negate all the booleans in memory
+]/and [<int> INDEX1] [<int> INDEX2] - Calculate the bitwise AND of the two specified elements
+[/or [<int> INDEX1] [<int> INDEX2] - Calculate the bitwise OR of the two specified elements
+^/logShift [<int> NUM] - Perform a logical shift of elements in memory by the specified amount
+_/convertTo [string/number] - Convert the boolean(bit) sequence in memory to the specified type
+9/morse - Convert the boolean(bit) sequence to Morse code
+u===================================================================================================================
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /help
+t===================================================================================================================
+#Usage: COMMAND [<TYPE> PARAMETERS]
+t===================================================================================================================
+General commands:
+t===================================================================================================================
+"/help - Display this help message
+/menu - Return to the menu
+
+;/add [<T> ELEMENT] - Add the specified element to the list
+P/remove [<int> INDEX] - Remove the element at the specified index from the list
+_/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one
+`/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one
+
+P/index [<T> ELEMENT] - Get the index of the first specified element in the list
+N/sort [ascending/descending] - Sort the list in ascending or descending order
+=/frequency - The frequency count of each element in the list
+L/print [<int> INDEX] - Print the element at the specified index in the list
+[/printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format
+0/getRandom - Get a random element from the list
+\/count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list
+//size - Get the number of elements in the list
+H/equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal
++/clear - Remove all elements from the list
+]/compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list
+-/mirror - Mirror elements' positions in list
+&/unique - Unique elements in the list
+[/readFile [<string> FILENAME] - Import data from the specified file and add it to the list
+M/writeFile [<string> FILENAME] - Export the list data to the specified file
+t===================================================================================================================
+Boolean-specific commands:
+t===================================================================================================================
+1/flip [<int> INDEX] - Flip the specified boolean
+//negateAll - Negate all the booleans in memory
+]/and [<int> INDEX1] [<int> INDEX2] - Calculate the bitwise AND of the two specified elements
+[/or [<int> INDEX1] [<int> INDEX2] - Calculate the bitwise OR of the two specified elements
+^/logShift [<int> NUM] - Perform a logical shift of elements in memory by the specified amount
+_/convertTo [string/number] - Convert the boolean(bit) sequence in memory to the specified type
+9/morse - Convert the boolean(bit) sequence to Morse code
+u===================================================================================================================
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+> /help
+t===================================================================================================================
+#Usage: COMMAND [<TYPE> PARAMETERS]
+t===================================================================================================================
+General commands:
+t===================================================================================================================
+"/help - Display this help message
+/menu - Return to the menu
+
+;/add [<T> ELEMENT] - Add the specified element to the list
+P/remove [<int> INDEX] - Remove the element at the specified index from the list
+_/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one
+`/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one
+
+P/index [<T> ELEMENT] - Get the index of the first specified element in the list
+N/sort [ascending/descending] - Sort the list in ascending or descending order
+=/frequency - The frequency count of each element in the list
+L/print [<int> INDEX] - Print the element at the specified index in the list
+[/printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format
+0/getRandom - Get a random element from the list
+\/count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list
+//size - Get the number of elements in the list
+H/equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal
++/clear - Remove all elements from the list
+]/compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list
+-/mirror - Mirror elements' positions in list
+&/unique - Unique elements in the list
+[/readFile [<string> FILENAME] - Import data from the specified file and add it to the list
+M/writeFile [<string> FILENAME] - Export the list data to the specified file
+t===================================================================================================================
+Number-specific commands:
+t===================================================================================================================
+U/sum [<int> INDEX1] [<int> INDEX2] - Calculate the sum of the two specified elements
+f/subtract [<int> INDEX1] [<int> INDEX2] - Calculate the difference between the two specified elements
+^/multiply [<int> INDEX1] [<int> INDEX2] - Calculate the product of the two specified elements
+]/divide [<int> INDEX1] [<int> INDEX2] - Calculate the division of the two specified elements
+t/pow [<int> INDEX1] [<int> INDEX2] - Calculate the power of the specified element to the specified exponent element
+L/factorial [<int> INDEX] - Calculate the factorial of the specified element
+,/sumAll - Calculate the sum of all elements
+1/average - Calculate the average of all elements
+u===================================================================================================================
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /help
+t===================================================================================================================
+#Usage: COMMAND [<TYPE> PARAMETERS]
+t===================================================================================================================
+General commands:
+t===================================================================================================================
+"/help - Display this help message
+/menu - Return to the menu
+
+;/add [<T> ELEMENT] - Add the specified element to the list
+P/remove [<int> INDEX] - Remove the element at the specified index from the list
+_/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one
+`/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one
+
+P/index [<T> ELEMENT] - Get the index of the first specified element in the list
+N/sort [ascending/descending] - Sort the list in ascending or descending order
+=/frequency - The frequency count of each element in the list
+L/print [<int> INDEX] - Print the element at the specified index in the list
+[/printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format
+0/getRandom - Get a random element from the list
+\/count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list
+//size - Get the number of elements in the list
+H/equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal
++/clear - Remove all elements from the list
+]/compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list
+-/mirror - Mirror elements' positions in list
+&/unique - Unique elements in the list
+[/readFile [<string> FILENAME] - Import data from the specified file and add it to the list
+M/writeFile [<string> FILENAME] - Export the list data to the specified file
+t===================================================================================================================
+Word-specific commands:
+t===================================================================================================================
+H/concat [<int> INDEX1] [<int> INDEX2] Concatenate two specified strings
+L/swapCase [<int> INDEX] Output swapped case version of the specified string
+F/upper [<int> INDEX] Output uppercase version of the specified string
+F/lower [<int> INDEX] Output lowercase version of the specified string
+G/reverse [<int> INDEX] Output reversed version of the specified string
+=/length [<int> INDEX] Get the length of the specified string
+M/join [<string> DELIMITER] Join all the strings with the specified delimiter
+f/regex [<string> PATTERN] Search for all elements that match the specified regular expression pattern
+u===================================================================================================================
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 0
+[1;31m
+Start test 9[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+> /help
+t===================================================================================================================
+#Usage: COMMAND [<TYPE> PARAMETERS]
+t===================================================================================================================
+General commands:
+t===================================================================================================================
+"/help - Display this help message
+/menu - Return to the menu
+
+;/add [<T> ELEMENT] - Add the specified element to the list
+P/remove [<int> INDEX] - Remove the element at the specified index from the list
+_/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one
+`/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one
+
+P/index [<T> ELEMENT] - Get the index of the first specified element in the list
+N/sort [ascending/descending] - Sort the list in ascending or descending order
+=/frequency - The frequency count of each element in the list
+L/print [<int> INDEX] - Print the element at the specified index in the list
+[/printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format
+0/getRandom - Get a random element from the list
+\/count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list
+//size - Get the number of elements in the list
+H/equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal
++/clear - Remove all elements from the list
+]/compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list
+-/mirror - Mirror elements' positions in list
+&/unique - Unique elements in the list
+[/readFile [<string> FILENAME] - Import data from the specified file and add it to the list
+M/writeFile [<string> FILENAME] - Export the list data to the specified file
+t===================================================================================================================
+Number-specific commands:
+t===================================================================================================================
+U/sum [<int> INDEX1] [<int> INDEX2] - Calculate the sum of the two specified elements
+f/subtract [<int> INDEX1] [<int> INDEX2] - Calculate the difference between the two specified elements
+^/multiply [<int> INDEX1] [<int> INDEX2] - Calculate the product of the two specified elements
+]/divide [<int> INDEX1] [<int> INDEX2] - Calculate the division of the two specified elements
+t/pow [<int> INDEX1] [<int> INDEX2] - Calculate the power of the specified element to the specified exponent element
+L/factorial [<int> INDEX] - Calculate the factorial of the specified element
+,/sumAll - Calculate the sum of all elements
+1/average - Calculate the average of all elements
+u===================================================================================================================
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /help
+t===================================================================================================================
+#Usage: COMMAND [<TYPE> PARAMETERS]
+t===================================================================================================================
+General commands:
+t===================================================================================================================
+"/help - Display this help message
+/menu - Return to the menu
+
+;/add [<T> ELEMENT] - Add the specified element to the list
+P/remove [<int> INDEX] - Remove the element at the specified index from the list
+_/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one
+`/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one
+
+P/index [<T> ELEMENT] - Get the index of the first specified element in the list
+N/sort [ascending/descending] - Sort the list in ascending or descending order
+=/frequency - The frequency count of each element in the list
+L/print [<int> INDEX] - Print the element at the specified index in the list
+[/printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format
+0/getRandom - Get a random element from the list
+\/count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list
+//size - Get the number of elements in the list
+H/equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal
++/clear - Remove all elements from the list
+]/compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list
+-/mirror - Mirror elements' positions in list
+&/unique - Unique elements in the list
+[/readFile [<string> FILENAME] - Import data from the specified file and add it to the list
+M/writeFile [<string> FILENAME] - Export the list data to the specified file
+t===================================================================================================================
+Boolean-specific commands:
+t===================================================================================================================
+1/flip [<int> INDEX] - Flip the specified boolean
+//negateAll - Negate all the booleans in memory
+]/and [<int> INDEX1] [<int> INDEX2] - Calculate the bitwise AND of the two specified elements
+[/or [<int> INDEX1] [<int> INDEX2] - Calculate the bitwise OR of the two specified elements
+^/logShift [<int> NUM] - Perform a logical shift of elements in memory by the specified amount
+_/convertTo [string/number] - Convert the boolean(bit) sequence in memory to the specified type
+9/morse - Convert the boolean(bit) sequence to Morse code
+u===================================================================================================================
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+> /help
+t===================================================================================================================
+#Usage: COMMAND [<TYPE> PARAMETERS]
+t===================================================================================================================
+General commands:
+t===================================================================================================================
+"/help - Display this help message
+/menu - Return to the menu
+
+;/add [<T> ELEMENT] - Add the specified element to the list
+P/remove [<int> INDEX] - Remove the element at the specified index from the list
+_/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one
+`/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one
+
+P/index [<T> ELEMENT] - Get the index of the first specified element in the list
+N/sort [ascending/descending] - Sort the list in ascending or descending order
+=/frequency - The frequency count of each element in the list
+L/print [<int> INDEX] - Print the element at the specified index in the list
+[/printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format
+0/getRandom - Get a random element from the list
+\/count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list
+//size - Get the number of elements in the list
+H/equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal
++/clear - Remove all elements from the list
+]/compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list
+-/mirror - Mirror elements' positions in list
+&/unique - Unique elements in the list
+[/readFile [<string> FILENAME] - Import data from the specified file and add it to the list
+M/writeFile [<string> FILENAME] - Export the list data to the specified file
+t===================================================================================================================
+Number-specific commands:
+t===================================================================================================================
+U/sum [<int> INDEX1] [<int> INDEX2] - Calculate the sum of the two specified elements
+f/subtract [<int> INDEX1] [<int> INDEX2] - Calculate the difference between the two specified elements
+^/multiply [<int> INDEX1] [<int> INDEX2] - Calculate the product of the two specified elements
+]/divide [<int> INDEX1] [<int> INDEX2] - Calculate the division of the two specified elements
+t/pow [<int> INDEX1] [<int> INDEX2] - Calculate the power of the specified element to the specified exponent element
+L/factorial [<int> INDEX] - Calculate the factorial of the specified element
+,/sumAll - Calculate the sum of all elements
+1/average - Calculate the average of all elements
+u===================================================================================================================
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /help
+t===================================================================================================================
+#Usage: COMMAND [<TYPE> PARAMETERS]
+t===================================================================================================================
+General commands:
+t===================================================================================================================
+"/help - Display this help message
+/menu - Return to the menu
+
+;/add [<T> ELEMENT] - Add the specified element to the list
+P/remove [<int> INDEX] - Remove the element at the specified index from the list
+_/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one
+`/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one
+
+P/index [<T> ELEMENT] - Get the index of the first specified element in the list
+N/sort [ascending/descending] - Sort the list in ascending or descending order
+=/frequency - The frequency count of each element in the list
+L/print [<int> INDEX] - Print the element at the specified index in the list
+[/printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format
+0/getRandom - Get a random element from the list
+\/count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list
+//size - Get the number of elements in the list
+H/equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal
++/clear - Remove all elements from the list
+]/compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list
+-/mirror - Mirror elements' positions in list
+&/unique - Unique elements in the list
+[/readFile [<string> FILENAME] - Import data from the specified file and add it to the list
+M/writeFile [<string> FILENAME] - Export the list data to the specified file
+t===================================================================================================================
+Word-specific commands:
+t===================================================================================================================
+H/concat [<int> INDEX1] [<int> INDEX2] Concatenate two specified strings
+L/swapCase [<int> INDEX] Output swapped case version of the specified string
+F/upper [<int> INDEX] Output uppercase version of the specified string
+F/lower [<int> INDEX] Output lowercase version of the specified string
+G/reverse [<int> INDEX] Output reversed version of the specified string
+=/length [<int> INDEX] Get the length of the specified string
+M/join [<string> DELIMITER] Join all the strings with the specified delimiter
+f/regex [<string> PATTERN] Search for all elements that match the specified regular expression pattern
+u===================================================================================================================
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 0
+[1;31m
+Start test 10[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /help
+t===================================================================================================================
+#Usage: COMMAND [<TYPE> PARAMETERS]
+t===================================================================================================================
+General commands:
+t===================================================================================================================
+"/help - Display this help message
+/menu - Return to the menu
+
+;/add [<T> ELEMENT] - Add the specified element to the list
+P/remove [<int> INDEX] - Remove the element at the specified index from the list
+_/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one
+`/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one
+
+P/index [<T> ELEMENT] - Get the index of the first specified element in the list
+N/sort [ascending/descending] - Sort the list in ascending or descending order
+=/frequency - The frequency count of each element in the list
+L/print [<int> INDEX] - Print the element at the specified index in the list
+[/printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format
+0/getRandom - Get a random element from the list
+\/count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list
+//size - Get the number of elements in the list
+H/equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal
++/clear - Remove all elements from the list
+]/compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list
+-/mirror - Mirror elements' positions in list
+&/unique - Unique elements in the list
+[/readFile [<string> FILENAME] - Import data from the specified file and add it to the list
+M/writeFile [<string> FILENAME] - Export the list data to the specified file
+t===================================================================================================================
+Word-specific commands:
+t===================================================================================================================
+H/concat [<int> INDEX1] [<int> INDEX2] Concatenate two specified strings
+L/swapCase [<int> INDEX] Output swapped case version of the specified string
+F/upper [<int> INDEX] Output uppercase version of the specified string
+F/lower [<int> INDEX] Output lowercase version of the specified string
+G/reverse [<int> INDEX] Output reversed version of the specified string
+=/length [<int> INDEX] Get the length of the specified string
+M/join [<string> DELIMITER] Join all the strings with the specified delimiter
+f/regex [<string> PATTERN] Search for all elements that match the specified regular expression pattern
+u===================================================================================================================
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /help
+t===================================================================================================================
+#Usage: COMMAND [<TYPE> PARAMETERS]
+t===================================================================================================================
+General commands:
+t===================================================================================================================
+"/help - Display this help message
+/menu - Return to the menu
+
+;/add [<T> ELEMENT] - Add the specified element to the list
+P/remove [<int> INDEX] - Remove the element at the specified index from the list
+_/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one
+`/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one
+
+P/index [<T> ELEMENT] - Get the index of the first specified element in the list
+N/sort [ascending/descending] - Sort the list in ascending or descending order
+=/frequency - The frequency count of each element in the list
+L/print [<int> INDEX] - Print the element at the specified index in the list
+[/printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format
+0/getRandom - Get a random element from the list
+\/count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list
+//size - Get the number of elements in the list
+H/equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal
++/clear - Remove all elements from the list
+]/compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list
+-/mirror - Mirror elements' positions in list
+&/unique - Unique elements in the list
+[/readFile [<string> FILENAME] - Import data from the specified file and add it to the list
+M/writeFile [<string> FILENAME] - Export the list data to the specified file
+t===================================================================================================================
+Boolean-specific commands:
+t===================================================================================================================
+1/flip [<int> INDEX] - Flip the specified boolean
+//negateAll - Negate all the booleans in memory
+]/and [<int> INDEX1] [<int> INDEX2] - Calculate the bitwise AND of the two specified elements
+[/or [<int> INDEX1] [<int> INDEX2] - Calculate the bitwise OR of the two specified elements
+^/logShift [<int> NUM] - Perform a logical shift of elements in memory by the specified amount
+_/convertTo [string/number] - Convert the boolean(bit) sequence in memory to the specified type
+9/morse - Convert the boolean(bit) sequence to Morse code
+u===================================================================================================================
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+> /help
+t===================================================================================================================
+#Usage: COMMAND [<TYPE> PARAMETERS]
+t===================================================================================================================
+General commands:
+t===================================================================================================================
+"/help - Display this help message
+/menu - Return to the menu
+
+;/add [<T> ELEMENT] - Add the specified element to the list
+P/remove [<int> INDEX] - Remove the element at the specified index from the list
+_/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one
+`/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one
+
+P/index [<T> ELEMENT] - Get the index of the first specified element in the list
+N/sort [ascending/descending] - Sort the list in ascending or descending order
+=/frequency - The frequency count of each element in the list
+L/print [<int> INDEX] - Print the element at the specified index in the list
+[/printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format
+0/getRandom - Get a random element from the list
+\/count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list
+//size - Get the number of elements in the list
+H/equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal
++/clear - Remove all elements from the list
+]/compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list
+-/mirror - Mirror elements' positions in list
+&/unique - Unique elements in the list
+[/readFile [<string> FILENAME] - Import data from the specified file and add it to the list
+M/writeFile [<string> FILENAME] - Export the list data to the specified file
+t===================================================================================================================
+Number-specific commands:
+t===================================================================================================================
+U/sum [<int> INDEX1] [<int> INDEX2] - Calculate the sum of the two specified elements
+f/subtract [<int> INDEX1] [<int> INDEX2] - Calculate the difference between the two specified elements
+^/multiply [<int> INDEX1] [<int> INDEX2] - Calculate the product of the two specified elements
+]/divide [<int> INDEX1] [<int> INDEX2] - Calculate the division of the two specified elements
+t/pow [<int> INDEX1] [<int> INDEX2] - Calculate the power of the specified element to the specified exponent element
+L/factorial [<int> INDEX] - Calculate the factorial of the specified element
+,/sumAll - Calculate the sum of all elements
+1/average - Calculate the average of all elements
+u===================================================================================================================
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /help
+t===================================================================================================================
+#Usage: COMMAND [<TYPE> PARAMETERS]
+t===================================================================================================================
+General commands:
+t===================================================================================================================
+"/help - Display this help message
+/menu - Return to the menu
+
+;/add [<T> ELEMENT] - Add the specified element to the list
+P/remove [<int> INDEX] - Remove the element at the specified index from the list
+_/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one
+`/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one
+
+P/index [<T> ELEMENT] - Get the index of the first specified element in the list
+N/sort [ascending/descending] - Sort the list in ascending or descending order
+=/frequency - The frequency count of each element in the list
+L/print [<int> INDEX] - Print the element at the specified index in the list
+[/printAll [asList/lineByLine/oneLine] - Print all elements in the list in specified format
+0/getRandom - Get a random element from the list
+\/count [<T> ELEMENT] - Count the number of occurrences of the specified element in the list
+//size - Get the number of elements in the list
+H/equals [<int> INDEX1] [<int> INDEX2] - Check if two elements are equal
++/clear - Remove all elements from the list
+]/compare [<int> INDEX1] [<int> INDEX2] Compare elements at the specified indices in the list
+-/mirror - Mirror elements' positions in list
+&/unique - Unique elements in the list
+[/readFile [<string> FILENAME] - Import data from the specified file and add it to the list
+M/writeFile [<string> FILENAME] - Export the list data to the specified file
+t===================================================================================================================
+Word-specific commands:
+t===================================================================================================================
+H/concat [<int> INDEX1] [<int> INDEX2] Concatenate two specified strings
+L/swapCase [<int> INDEX] Output swapped case version of the specified string
+F/upper [<int> INDEX] Output uppercase version of the specified string
+F/lower [<int> INDEX] Output lowercase version of the specified string
+G/reverse [<int> INDEX] Output reversed version of the specified string
+=/length [<int> INDEX] Get the length of the specified string
+M/join [<string> DELIMITER] Join all the strings with the specified delimiter
+f/regex [<string> PATTERN] Search for all elements that match the specified regular expression pattern
+u===================================================================================================================
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 0
+[1;31m
+Start test 11[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /printAll oneLine
+List of elements:
+true
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /printAll oneLine
+List of elements:
+true false
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /printAll oneLine
+List of elements:
+true false false
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /printAll oneLine
+List of elements:
+true false false true
+Perform action:
+[1;31m
+Start test 12[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /printAll oneLine
+List of elements:
+2
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+> /printAll oneLine
+List of elements:
+2 -1
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+> /printAll oneLine
+List of elements:
+	2 -1 -1
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /printAll oneLine
+List of elements:
+2 -1 -1 2
+Perform action:
+[1;31m
+Start test 13[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /printAll oneLine
+List of elements:
+CakeIsALie
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /printAll oneLine
+List of elements:
+CakeIsALie CakeIsATruth
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /printAll oneLine
+List of elements:
+&CakeIsALie CakeIsATruth CakeIsATruth
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /printAll oneLine
+List of elements:
+1CakeIsALie CakeIsATruth CakeIsATruth CakeIsALie
+Perform action:
+[1;31m
+Start test 14[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /print 0
+Element on 0 position is true
+Perform action:
+> /print 1
+ Element on 1 position is false
+Perform action:
+> /print 2
+ Element on 2 position is false
+Perform action:
+> /print 3
+Element on 3 position is true
+Perform action:
+[1;31m
+Start test 15[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /print 0
+Element on 0 position is 2
+Perform action:
+> /print 1
+Element on 1 position is -1
+Perform action:
+> /print 2
+Element on 2 position is -1
+Perform action:
+> /print 3
+Element on 3 position is 2
+Perform action:
+[1;31m
+Start test 16[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /print 0
+%Element on 0 position is CakeIsALie
+Perform action:
+> /print 1
+'Element on 1 position is CakeIsATruth
+Perform action:
+> /print 2
+'Element on 2 position is CakeIsATruth
+Perform action:
+> /print 3
+%Element on 3 position is CakeIsALie
+Perform action:
+[1;31m
+Start test 17[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /remove 3
+Element on 3 position removed
+Perform action:
+> /printAll oneLine
+List of elements:
+true false false
+Perform action:
+> /remove 2
+Element on 2 position removed
+Perform action:
+> /printAll oneLine
+List of elements:
+true false
+Perform action:
+> /remove 1
+Element on 1 position removed
+Perform action:
+> /printAll oneLine
+List of elements:
+true
+Perform action:
+> /remove 0
+Element on 0 position removed
+Perform action:
+> /printAll oneLine
+List of elements:
+
+Perform action:
+[1;31m
+Start test 18[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /remove 3
+Element on 3 position removed
+Perform action:
+> /printAll oneLine
+List of elements:
+	2 -1 -1
+Perform action:
+> /remove 2
+Element on 2 position removed
+Perform action:
+> /printAll oneLine
+List of elements:
+2 -1
+Perform action:
+> /remove 1
+Element on 1 position removed
+Perform action:
+> /printAll oneLine
+List of elements:
+2
+Perform action:
+> /remove 0
+Element on 0 position removed
+Perform action:
+> /printAll oneLine
+List of elements:
+
+Perform action:
+[1;31m
+Start test 19[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /remove 3
+Element on 3 position removed
+Perform action:
+> /printAll oneLine
+List of elements:
+&CakeIsALie CakeIsATruth CakeIsATruth
+Perform action:
+> /remove 2
+Element on 2 position removed
+Perform action:
+> /printAll oneLine
+List of elements:
+CakeIsALie CakeIsATruth
+Perform action:
+> /remove 1
+Element on 1 position removed
+Perform action:
+> /printAll oneLine
+List of elements:
+CakeIsALie
+Perform action:
+> /remove 0
+Element on 0 position removed
+Perform action:
+> /printAll oneLine
+List of elements:
+
+Perform action:
+[1;31m
+Start test 20[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /replace 3 false
++Element on 3 position replaced with false
+Perform action:
+> /printAll oneLine
+List of elements:
+true false false false
+Perform action:
+> /replace 2 false
++Element on 2 position replaced with false
+Perform action:
+> /printAll oneLine
+List of elements:
+true false false false
+Perform action:
+> /replace 1 false
++Element on 1 position replaced with false
+Perform action:
+> /printAll oneLine
+List of elements:
+true false false false
+Perform action:
+> /replace 0 false
++Element on 0 position replaced with false
+Perform action:
+> /printAll oneLine
+List of elements:
+false false false false
+Perform action:
+[1;31m
+Start test 21[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /replace 3 42
+(Element on 3 position replaced with 42
+Perform action:
+> /printAll oneLine
+List of elements:
+2 -1 -1 42
+Perform action:
+> /replace 2 42
+(Element on 2 position replaced with 42
+Perform action:
+> /printAll oneLine
+List of elements:
+2 -1 42 42
+Perform action:
+> /replace 1 42
+(Element on 1 position replaced with 42
+Perform action:
+> /printAll oneLine
+List of elements:
+2 42 42 42
+Perform action:
+> /replace 0 42
+(Element on 0 position replaced with 42
+Perform action:
+> /printAll oneLine
+List of elements:
+42 42 42 42
+Perform action:
+[1;31m
+Start test 22[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /replace 3 tmp
+)Element on 3 position replaced with tmp
+Perform action:
+> /printAll oneLine
+List of elements:
+*CakeIsALie CakeIsATruth CakeIsATruth tmp
+Perform action:
+> /replace 2 tmp
+)Element on 2 position replaced with tmp
+Perform action:
+> /printAll oneLine
+List of elements:
+!CakeIsALie CakeIsATruth tmp tmp
+Perform action:
+> /replace 1 tmp
+)Element on 1 position replaced with tmp
+Perform action:
+> /printAll oneLine
+List of elements:
+CakeIsALie tmp tmp tmp
+Perform action:
+> /replace 0 tmp
+)Element on 0 position replaced with tmp
+Perform action:
+> /printAll oneLine
+List of elements:
+tmp tmp tmp tmp
+Perform action:
+[1;31m
+Start test 23[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /replaceAll true false
+'Each true element replaced with false
+Perform action:
+> /printAll oneLine
+List of elements:
+false false false false
+Perform action:
+[1;31m
+Start test 24[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /replaceAll 2 42
+!Each 2 element replaced with 42
+Perform action:
+> /printAll oneLine
+List of elements:
+42 -1 -1 42
+Perform action:
+[1;31m
+Start test 25[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /replaceAll CakeIsALie tmp
++Each CakeIsALie element replaced with tmp
+Perform action:
+> /printAll oneLine
+List of elements:
+#tmp CakeIsATruth CakeIsATruth tmp
+Perform action:
+[1;31m
+Start test 26[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /index true
++First occurrence of true is on 0 position
+Perform action:
+> /index false
+,First occurrence of false is on 1 position
+Perform action:
+> /index false
+,First occurrence of false is on 1 position
+Perform action:
+> /index true
++First occurrence of true is on 0 position
+Perform action:
+[1;31m
+Start test 27[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /index 2
+(First occurrence of 2 is on 0 position
+Perform action:
+> /index -1
+)First occurrence of -1 is on 1 position
+Perform action:
+> /index -1
+)First occurrence of -1 is on 1 position
+Perform action:
+> /index 2
+(First occurrence of 2 is on 0 position
+Perform action:
+[1;31m
+Start test 28[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /index CakeIsALie
+1First occurrence of CakeIsALie is on 0 position
+Perform action:
+> /index CakeIsATruth
+3First occurrence of CakeIsATruth is on 1 position
+Perform action:
+> /index CakeIsATruth
+3First occurrence of CakeIsATruth is on 1 position
+Perform action:
+> /index CakeIsALie
+1First occurrence of CakeIsALie is on 0 position
+Perform action:
+[1;31m
+Start test 29[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /sort ascending
+Memory sorted ascending
+Perform action:
+> /printAll oneLine
+List of elements:
+false false true true
+Perform action:
+[1;31m
+Start test 30[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /sort ascending
+Memory sorted ascending
+Perform action:
+> /printAll oneLine
+List of elements:
+-1 -1 2 2
+Perform action:
+[1;31m
+Start test 31[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /sort ascending
+Memory sorted ascending
+Perform action:
+> /printAll oneLine
+List of elements:
+1CakeIsALie CakeIsALie CakeIsATruth CakeIsATruth
+Perform action:
+[1;31m
+Start test 32[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /frequency
+Frequency:
+
+false: 2
+	true: 2
+Perform action:
+[1;31m
+Start test 33[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /frequency
+Frequency:
+-1: 2
+2: 2
+Perform action:
+[1;31m
+Start test 34[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /frequency
+Frequency:
+CakeIsATruth: 2
+CakeIsALie: 2
+Perform action:
+[1;31m
+Start test 35[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /count true
+Amount of true: 2
+Perform action:
+> /count false
+Amount of false: 2
+Perform action:
+> /count false
+Amount of false: 2
+Perform action:
+> /count true
+Amount of true: 2
+Perform action:
+[1;31m
+Start test 36[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /count 2
+Amount of 2: 2
+Perform action:
+> /count -1
+Amount of -1: 2
+Perform action:
+> /count -1
+Amount of -1: 2
+Perform action:
+> /count 2
+Amount of 2: 2
+Perform action:
+[1;31m
+Start test 37[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /count CakeIsALie
+Amount of CakeIsALie: 2
+Perform action:
+> /count CakeIsATruth
+Amount of CakeIsATruth: 2
+Perform action:
+> /count CakeIsATruth
+Amount of CakeIsATruth: 2
+Perform action:
+> /count CakeIsALie
+Amount of CakeIsALie: 2
+Perform action:
+[1;31m
+Start test 38[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /size
+Amount of elements: 4
+Perform action:
+[1;31m
+Start test 39[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /size
+Amount of elements: 4
+Perform action:
+[1;31m
+Start test 40[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /size
+Amount of elements: 4
+Perform action:
+[1;31m
+Start test 41[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /equals 0 0
+(0 and 0 elements are equal: true = true
+Perform action:
+> /equals 0 1
+.0 and 1 elements are not equal: true != false
+Perform action:
+> /equals 0 2
+.0 and 2 elements are not equal: true != false
+Perform action:
+> /equals 0 3
+(0 and 3 elements are equal: true = true
+Perform action:
+> /equals 1 0
+.1 and 0 elements are not equal: false != true
+Perform action:
+> /equals 1 1
+*1 and 1 elements are equal: false = false
+Perform action:
+> /equals 1 2
+*1 and 2 elements are equal: false = false
+Perform action:
+> /equals 1 3
+.1 and 3 elements are not equal: false != true
+Perform action:
+> /equals 2 0
+.2 and 0 elements are not equal: false != true
+Perform action:
+> /equals 2 1
+*2 and 1 elements are equal: false = false
+Perform action:
+> /equals 2 2
+*2 and 2 elements are equal: false = false
+Perform action:
+> /equals 2 3
+.2 and 3 elements are not equal: false != true
+Perform action:
+> /equals 3 0
+(3 and 0 elements are equal: true = true
+Perform action:
+> /equals 3 1
+.3 and 1 elements are not equal: true != false
+Perform action:
+> /equals 3 2
+.3 and 2 elements are not equal: true != false
+Perform action:
+> /equals 3 3
+(3 and 3 elements are equal: true = true
+Perform action:
+[1;31m
+Start test 42[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /equals 0 0
+"0 and 0 elements are equal: 2 = 2
+Perform action:
+> /equals 0 1
+(0 and 1 elements are not equal: 2 != -1
+Perform action:
+> /equals 0 2
+(0 and 2 elements are not equal: 2 != -1
+Perform action:
+> /equals 0 3
+"0 and 3 elements are equal: 2 = 2
+Perform action:
+> /equals 1 0
+(1 and 0 elements are not equal: -1 != 2
+Perform action:
+> /equals 1 1
+$1 and 1 elements are equal: -1 = -1
+Perform action:
+> /equals 1 2
+$1 and 2 elements are equal: -1 = -1
+Perform action:
+> /equals 1 3
+(1 and 3 elements are not equal: -1 != 2
+Perform action:
+> /equals 2 0
+(2 and 0 elements are not equal: -1 != 2
+Perform action:
+> /equals 2 1
+$2 and 1 elements are equal: -1 = -1
+Perform action:
+> /equals 2 2
+$2 and 2 elements are equal: -1 = -1
+Perform action:
+> /equals 2 3
+(2 and 3 elements are not equal: -1 != 2
+Perform action:
+> /equals 3 0
+"3 and 0 elements are equal: 2 = 2
+Perform action:
+> /equals 3 1
+(3 and 1 elements are not equal: 2 != -1
+Perform action:
+> /equals 3 2
+(3 and 2 elements are not equal: 2 != -1
+Perform action:
+> /equals 3 3
+"3 and 3 elements are equal: 2 = 2
+Perform action:
+[1;31m
+Start test 43[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /equals 0 0
+40 and 0 elements are equal: CakeIsALie = CakeIsALie
+Perform action:
+> /equals 0 1
+;0 and 1 elements are not equal: CakeIsALie != CakeIsATruth
+Perform action:
+> /equals 0 2
+;0 and 2 elements are not equal: CakeIsALie != CakeIsATruth
+Perform action:
+> /equals 0 3
+40 and 3 elements are equal: CakeIsALie = CakeIsALie
+Perform action:
+> /equals 1 0
+;1 and 0 elements are not equal: CakeIsATruth != CakeIsALie
+Perform action:
+> /equals 1 1
+81 and 1 elements are equal: CakeIsATruth = CakeIsATruth
+Perform action:
+> /equals 1 2
+81 and 2 elements are equal: CakeIsATruth = CakeIsATruth
+Perform action:
+> /equals 1 3
+;1 and 3 elements are not equal: CakeIsATruth != CakeIsALie
+Perform action:
+> /equals 2 0
+;2 and 0 elements are not equal: CakeIsATruth != CakeIsALie
+Perform action:
+> /equals 2 1
+82 and 1 elements are equal: CakeIsATruth = CakeIsATruth
+Perform action:
+> /equals 2 2
+82 and 2 elements are equal: CakeIsATruth = CakeIsATruth
+Perform action:
+> /equals 2 3
+;2 and 3 elements are not equal: CakeIsATruth != CakeIsALie
+Perform action:
+> /equals 3 0
+43 and 0 elements are equal: CakeIsALie = CakeIsALie
+Perform action:
+> /equals 3 1
+;3 and 1 elements are not equal: CakeIsALie != CakeIsATruth
+Perform action:
+> /equals 3 2
+;3 and 2 elements are not equal: CakeIsALie != CakeIsATruth
+Perform action:
+> /equals 3 3
+43 and 3 elements are equal: CakeIsALie = CakeIsALie
+Perform action:
+[1;31m
+Start test 44[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+	> /clear
+Data cleared
+Perform action:
+> /printAll oneLine
+List of elements:
+
+Perform action:
+[1;31m
+Start test 45[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+	> /clear
+Data cleared
+Perform action:
+> /printAll oneLine
+List of elements:
+
+Perform action:
+[1;31m
+Start test 46[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+	> /clear
+Data cleared
+Perform action:
+> /printAll oneLine
+List of elements:
+
+Perform action:
+[1;31m
+Start test 47[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /compare 0 0
+Result: true = true
+Perform action:
+> /compare 0 1
+Result: true > false
+Perform action:
+> /compare 0 2
+Result: true > false
+Perform action:
+> /compare 0 3
+Result: true = true
+Perform action:
+> /compare 1 0
+Result: false < true
+Perform action:
+> /compare 1 1
+Result: false = false
+Perform action:
+> /compare 1 2
+Result: false = false
+Perform action:
+> /compare 1 3
+Result: false < true
+Perform action:
+> /compare 2 0
+Result: false < true
+Perform action:
+> /compare 2 1
+Result: false = false
+Perform action:
+> /compare 2 2
+Result: false = false
+Perform action:
+> /compare 2 3
+Result: false < true
+Perform action:
+> /compare 3 0
+Result: true = true
+Perform action:
+> /compare 3 1
+Result: true > false
+Perform action:
+> /compare 3 2
+Result: true > false
+Perform action:
+> /compare 3 3
+Result: true = true
+Perform action:
+[1;31m
+Start test 48[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /compare 0 0
+Result: 2 = 2
+Perform action:
+> /compare 0 1
+Result: 2 > -1
+Perform action:
+> /compare 0 2
+Result: 2 > -1
+Perform action:
+> /compare 0 3
+Result: 2 = 2
+Perform action:
+> /compare 1 0
+Result: -1 < 2
+Perform action:
+> /compare 1 1
+Result: -1 = -1
+Perform action:
+> /compare 1 2
+Result: -1 = -1
+Perform action:
+> /compare 1 3
+Result: -1 < 2
+Perform action:
+> /compare 2 0
+Result: -1 < 2
+Perform action:
+> /compare 2 1
+Result: -1 = -1
+Perform action:
+> /compare 2 2
+Result: -1 = -1
+Perform action:
+> /compare 2 3
+Result: -1 < 2
+Perform action:
+> /compare 3 0
+Result: 2 = 2
+Perform action:
+> /compare 3 1
+Result: 2 > -1
+Perform action:
+> /compare 3 2
+Result: 2 > -1
+Perform action:
+> /compare 3 3
+Result: 2 = 2
+Perform action:
+[1;31m
+Start test 49[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /compare 0 0
+!Result: CakeIsALie = CakeIsALie
+Perform action:
+> /compare 0 1
+#Result: CakeIsALie < CakeIsATruth
+Perform action:
+> /compare 0 2
+#Result: CakeIsALie < CakeIsATruth
+Perform action:
+> /compare 0 3
+!Result: CakeIsALie = CakeIsALie
+Perform action:
+> /compare 1 0
+#Result: CakeIsATruth > CakeIsALie
+Perform action:
+> /compare 1 1
+%Result: CakeIsATruth = CakeIsATruth
+Perform action:
+> /compare 1 2
+%Result: CakeIsATruth = CakeIsATruth
+Perform action:
+> /compare 1 3
+#Result: CakeIsATruth > CakeIsALie
+Perform action:
+> /compare 2 0
+#Result: CakeIsATruth > CakeIsALie
+Perform action:
+> /compare 2 1
+%Result: CakeIsATruth = CakeIsATruth
+Perform action:
+> /compare 2 2
+%Result: CakeIsATruth = CakeIsATruth
+Perform action:
+> /compare 2 3
+#Result: CakeIsATruth > CakeIsALie
+Perform action:
+> /compare 3 0
+!Result: CakeIsALie = CakeIsALie
+Perform action:
+> /compare 3 1
+#Result: CakeIsALie < CakeIsATruth
+Perform action:
+> /compare 3 2
+#Result: CakeIsALie < CakeIsATruth
+Perform action:
+> /compare 3 3
+!Result: CakeIsALie = CakeIsALie
+Perform action:
+[1;31m
+Start test 50[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+
+> /mirror
+Data reversed
+Perform action:
+> /printAll oneLine
+List of elements:
+true false false true
+Perform action:
+[1;31m
+Start test 51[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /mirror
+Data reversed
+Perform action:
+> /printAll oneLine
+List of elements:
+2 -1 -1 2
+Perform action:
+[1;31m
+Start test 52[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+
+> /mirror
+Data reversed
+Perform action:
+> /printAll oneLine
+List of elements:
+1CakeIsALie CakeIsATruth CakeIsATruth CakeIsALie
+Perform action:
+[1;31m
+Start test 53[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+
+> /unique
+Unique values: [false, true]
+Perform action:
+[1;31m
+Start test 54[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /unique
+Unique values: [-1, 2]
+Perform action:
+[1;31m
+Start test 55[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+
+> /unique
++Unique values: [CakeIsATruth, CakeIsALie]
+Perform action:
+[1;31m
+Start test 56[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /readFile booleans.txt
+Data imported: 3
+Perform action:
+> /printAll oneLine
+List of elements:
+true true true
+Perform action:
+[1;31m
+Start test 57[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+> /readFile integers.txt
+Data imported: 3
+Perform action:
+> /printAll oneLine
+List of elements:
+"2147483647 2147483647 2147483647
+Perform action:
+[1;31m
+Start test 58[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /readFile strings.txt
+Data imported: 3
+Perform action:
+> /printAll oneLine
+List of elements:
+"CakeIsALie CakeIsALie CakeIsALie
+Perform action:
+[1;31m
+Start test 59[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /writeFile result.txt
+Data exported: 4
+Perform action:
+	> /clear
+Data cleared
+Perform action:
+> /readFile result.txt
+Data imported: 4
+Perform action:
+> /printAll oneLine
+List of elements:
+true false false true
+Perform action:
+[1;31m
+Start test 60[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /writeFile result.txt
+Data exported: 4
+Perform action:
+	> /clear
+Data cleared
+Perform action:
+> /readFile result.txt
+Data imported: 4
+Perform action:
+> /printAll oneLine
+List of elements:
+2 -1 -1 2
+Perform action:
+[1;31m
+Start test 61[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /writeFile result.txt
+Data exported: 4
+Perform action:
+	> /clear
+Data cleared
+Perform action:
+> /readFile result.txt
+Data imported: 4
+Perform action:
+> /printAll oneLine
+List of elements:
+1CakeIsALie CakeIsATruth CakeIsATruth CakeIsALie
+Perform action:
+[1;31m
+Start test 62[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+	> /add 4
+Element 4 added
+Perform action:
+> /sum 0 1
+!Calculation performed: 2 + 4 = 6
+Perform action:
+> /subtract 0 1
+"Calculation performed: 2 - 4 = -2
+Perform action:
+> /multiply 0 1
+!Calculation performed: 2 * 4 = 8
+Perform action:
+> /divide 1 0
+!Calculation performed: 4 / 2 = 2
+Perform action:
+> /pow 0 1
+"Calculation performed: 2 ^ 4 = 16
+Perform action:
+> /factorial 1
+Calculation performed: 4! = 24
+Perform action:
+
+> /sumAll
+Sum of all elements: 6
+Perform action:
+> /average
+Average of all elements: 3
+Perform action:
+[1;31m
+Start test 63[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add Hello,
+Element Hello, added
+Perform action:
+> /add world!
+Element world! added
+Perform action:
+> /concat 0 1
+#Concatenated string: Hello,world!
+Perform action:
+> /swapCase 1
++"world!" string with swapped case: WORLD!
+Perform action:
+> /upper 0
+"Uppercase "Hello," string: HELLO,
+Perform action:
+> /lower 0
+"Lowercase "Hello," string: hello,
+Perform action:
+> /reverse 0
+!Reversed "Hello," string: ,olleH
+Perform action:
+> /length 0
+Length of "Hello," string: 6
+Perform action:
+
+> /join _
+Joined string: Hello,_world!
+Perform action:
+> /regex H.+
+$Strings that match provided regex:
+
+[Hello,]
+Perform action:
+> /regex .+\!
+$Strings that match provided regex:
+
+[world!]
+Perform action:
+[1;31m
+Start test 64[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add true
+Element  true  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+> /add false
+Element  false  added
+Perform action:
+
+> /flip 0
+Element on 0 position flipped
+Perform action:
+> /printAll oneLine
+List of elements:
+.true true false true false false false false
+Perform action:
+> /negateAll
+All elements negated
+Perform action:
+> /printAll oneLine
+List of elements:
+,false false true false true true true true
+Perform action:
+> /logShift 2
+Elements shifted by 2
+Perform action:
+> /printAll oneLine
+List of elements:
+,true true false false true false true true
+Perform action:
+> /logShift -2
+Elements shifted by -2
+Perform action:
+> /printAll oneLine
+List of elements:
+,false false true false true true true true
+Perform action:
+> /and 0 4
+.Operation performed: (false && true) is false
+Perform action:
+
+> /or 0 4
+-Operation performed: (false || true) is true
+Perform action:
+> /convertTo string
+Converted: /
+Perform action:
+> /convertTo number
+Converted: 47
+Perform action:
+	> /morse
+Morse code: __._....
+Perform action:
