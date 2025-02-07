@@ -1,23 +1,26 @@
-package memorizingtool;//Chapter 1
+package memorizingtool; // Chapter 1
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
 /**
- It is all about memorizing Booleans. You see, regular Booleans are so forgetful!
- They constantly change their value, and it's just too much for us to handle.
- It probably has a magical power to store Boolean values indefinitely. You can pass a Boolean to it, and it will remember it forever.
-
- This class must be a lifesaver for forgetful programmers like me. No more worrying about Booleans changing unexpectedly.
- We can now rely on the trustworthy BooleanMemorize class to keep our Booleans intact. I can't wait to use it in my next project!
+ * It is all about memorizing Booleans. You see, regular Booleans are so forgetful!
+ * They constantly change their value, and it's just too much for us to handle.
+ * It probably has a magical power to store Boolean values indefinitely.
+ * You can pass a Boolean to it, and it will remember it forever.
+ *
+ * This class must be a lifesaver for forgetful programmers like me.
+ * No more worrying about Booleans changing unexpectedly.
+ * We can now rely on the trustworthy BooleanMemorize class to keep our Booleans intact.
+ * I can't wait to use it in my next project!
  */
 public class BooleanMemorize {
 
   static ArrayList<Boolean> list = new ArrayList<>();
   boolean finished = false;
-  static  List<Object> args = new ArrayList<>();
-  static  Map<String, Class<?>[]> commands;
+  static List<Object> args = new ArrayList<>();
+  static Map<String, Class<?>[]> commands;
 
   public BooleanMemorize() {
     list.clear();
@@ -59,17 +62,19 @@ public class BooleanMemorize {
       System.out.println("Perform action:");
       String[] data = scanner.nextLine().split(" ");
 
-      for (int  i  =  1;  i  <  data.length;  i++) {
-        if (commands.get(data[0])[i - 1].equals(int.class))
+      for (int i = 1; i < data.length; i++) {
+        if (commands.get(data[0])[i - 1].equals(int.class)) {
           args.add(Integer.parseInt(data[i]));
-        else if (commands.get(data[0])[i - 1].equals(Boolean.class)) {
+        } else if (commands.get(data[0])[i - 1].equals(Boolean.class)) {
           args.add(data[i].equals("true"));
         } else {
           args.add(data[i]);
         }
       }
 
-      this.getClass().getDeclaredMethod(data[0].substring(1), commands.get(data[0])).invoke(this, args.toArray());
+      this.getClass()
+              .getDeclaredMethod(data[0].substring(1), commands.get(data[0]))
+              .invoke(this, args.toArray());
     }
   }
 
@@ -86,8 +91,7 @@ public class BooleanMemorize {
                     "/add [<T> ELEMENT] - Add the specified element to the list\n" +
                     "/remove [<int> INDEX] - Remove the element at the specified index from the list\n" +
                     "/replace [<int> INDEX] [<T> ELEMENT] - Replace the element at specified index with the new one\n" +
-                    "/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new " +
-                    "one\n" +
+                    "/replaceAll [<T> OLD] [<T> NEW] - Replace all occurrences of specified element with the new one\n" +
                     "\n" +
                     "/index [<T> ELEMENT] - Get the index of the first specified element in the list\n" +
                     "/sort [ascending/descending] - Sort the list in ascending or descending order\n" +
@@ -118,224 +122,256 @@ public class BooleanMemorize {
                     "===================================================================================================================");
   }
 
-  void     menu  ( )  {
-    this . finished   =  true  ;
+  void menu() {
+    finished = true;
   }
 
-  void  add  (  Boolean  element  )  {  list  .  add  (  element  )  ;  System  .  out  .  println  (  "Element  "  +  element  +  "  added"  )  ;  }
+  void add(Boolean element) {
+    list.add(element);
+    System.out.println("Element " + element + " added");
+  }
 
-  void    remove   (  int   index )  {  list.remove  (  index ) ;  System.out.println  (  "Element on "  +  index  +  " position removed"  )  ;   }
+  void remove(int index) {
+    list.remove(index);
+    System.out.println("Element on " + index + " position removed");
+  }
 
-  void  replace  (  int  index,  Boolean  element  )  {  list.set  (  index  ,  element ) ;  System.out.println  (  "Element on "  +  index  +  " position replaced with "  +  element  )  ;  }
-  //adventure and a mind hungry for knowledge. Every day, she would wander through the...
-  void    replaceAll  ( Boolean   from,    Boolean  to )  {
-    for ( int  i  =  0;  i  <  list.size  (  ) ;  i   ++  )  {
-      if ( list.get  ( i  )  .  equals  ( from  )  )  {
-        list.set  ( i  ,    to )  ;
+  void replace(int index, Boolean element) {
+    list.set(index, element);
+    System.out.println("Element on " + index + " position replaced with " + element);
+  }
+
+  void replaceAll(Boolean from, Boolean to) {
+    for (int i = 0; i < list.size(); i++) {
+      if (list.get(i).equals(from)) {
+        list.set(i, to);
       }
     }
-    System.out.println  (  "Each "  +   from  +   " element replaced with "  +   to  )  ;
+    System.out.println("Each " + from + " element replaced with " + to);
   }
 
-  void  index  ( Boolean  value )  {
-    System.out.println  (  "First occurrence of "   +  value  +  " is on "  +   list.indexOf  (  value  )  +  " position"  )  ;
+  void index(Boolean value) {
+    System.out.println("First occurrence of " + value + " is on " + list.indexOf(value) + " position");
   }
 
-  void     sort(  String  way  )  {  for  (  int  i  =  0  ;  i  <  list.size(  )  ;  i  ++  )  {   for  (  int  j  =  i  ;  j  <  list.size(  )  ;  j  ++  )  {   if  (  list.get(  i  )  &&  !  list.get(  j  )  &&  way.equals(  "ascending"  )  ||  list.get(  i  )  &&  !  list.get(  j  )  &&  way.equals(  "descending"  )  )  {    Boolean  temp  =  list.get(  i  )  ;    list.set(  i  ,  list.get(  j  )  )  ;    list.set(  j  ,  temp  )  ;   }  }  }  System.out.printf(  "Memory sorted %s\n"  ,  way  )  ;  }
+  void sort(String way) {
+    // For Booleans, ascending order: false then true; descending: true then false.
+    for (int i = 0; i < list.size(); i++) {
+      for (int j = i + 1; j < list.size(); j++) {
+        if (way.equals("ascending")) {
+          if (list.get(i) && !list.get(j)) { // true should come after false
+            Boolean temp = list.get(i);
+            list.set(i, list.get(j));
+            list.set(j, temp);
+          }
+        } else if (way.equals("descending")) {
+          if (!list.get(i) && list.get(j)) { // false should come after true
+            Boolean temp = list.get(i);
+            list.set(i, list.get(j));
+            list.set(j, temp);
+          }
+        }
+      }
+    }
+    System.out.printf("Memory sorted %s\n", way);
+  }
 
   void frequency() {
-    Map<Boolean ,  Long>  counts  =  new   HashMap<>();
+    Map<Boolean, Long> counts = new HashMap<>();
     for (Boolean b : list) {
-      if (counts.get(b)  ==  null) {
-        counts.put(b,  1L);
-      } else {
-        counts.put(b,  counts.get(b)  +  1);
-      }
+      counts.put(b, counts.getOrDefault(b, 0L) + 1);
     }
-
     System.out.println("Frequency:");
-    for (Map.Entry<Boolean ,  Long>  entry : counts.entrySet()) {
-      System.out.println(entry.getKey() +  ": "  +  entry.getValue());
+    for (Map.Entry<Boolean, Long> entry : counts.entrySet()) {
+      System.out.println(entry.getKey() + ": " + entry.getValue());
     }
   }
 
-  void    print  (   int  index   )   {    System.out.println(  "Element on "   +   index   +   " position is "   +   list.get(  index   )   )   ;  }
+  void print(int index) {
+    System.out.println("Element on " + index + " position is " + list.get(index));
+  }
 
-  void   getRandom   (   )   {    Random  random  =  new  Random  (   )   ;    System.out.println(   "Random element: "  +   list.get(  random.nextInt(  1   )   )   )   ;  }
-
-  void    printAll( String type  )  {
-    switch ( type ) {
-      case  "asList"  :
-        System.out.println( "List of elements:\n" +
-                Arrays.toString( list.toArray() ) ) ;
-        break ;
-      case  "lineByLine"  :
-        System.out.println( "List of elements:\n" ) ;
-        for ( Boolean i  :  list ) {
-          System.out.println( i ) ;
-        }
-        break ;
-      case  "oneLine"  :
-        System.out.println( "List of elements:" ) ;
-        for ( int i  =  0 ;  i  <  list.size() -  1 ;  i++ ) {
-          System.out.print( list.get( i )  +  " " ) ;
-        }
-        if ( list.size()  >  0 )
-          System.out.print( list.get( list.size() -  1 ) ) ;
-        System.out.println() ;
-        break ;
+  void getRandom() {
+    Random random = new Random();
+    if (!list.isEmpty()) {
+      System.out.println("Random element: " + list.get(random.nextInt(list.size())));
+    } else {
+      System.out.println("List is empty.");
     }
   }
-  //village, observing the world around her and asking questions that often left the villagers perplexed...
-  void   count( Boolean value ) {
-    int  amount  =  0 ;
-    for ( Boolean i  :  list ) {
-      if ( i  ==  value ) {
-        amount++ ;
+
+  void printAll(String type) {
+    switch (type) {
+      case "asList":
+        System.out.println("List of elements:\n" + Arrays.toString(list.toArray()));
+        break;
+      case "lineByLine":
+        System.out.println("List of elements:");
+        for (Boolean i : list) {
+          System.out.println(i);
+        }
+        break;
+      case "oneLine":
+        System.out.println("List of elements:");
+        for (int i = 0; i < list.size() - 1; i++) {
+          System.out.print(list.get(i) + " ");
+        }
+        if (!list.isEmpty()) {
+          System.out.print(list.get(list.size() - 1));
+        }
+        System.out.println();
+        break;
+      default:
+        System.out.println("Unknown printAll type: " + type);
+    }
+  }
+
+  void count(Boolean value) {
+    int amount = 0;
+    for (Boolean i : list) {
+      if (i.equals(value)) {
+        amount++;
       }
     }
-    System.out.println( "Amount of "  +  value  +  ": "  +  amount ) ;
+    System.out.println("Amount of " + value + ": " + amount);
   }
 
-  void  size()    {
-    System.out.println(  "Amount of elements: "+   list.size()  )  ;
-  }
-  void  equals(  int  i,  int  j  )   {
-    boolean  res  =  list.get(  i  ).equals(  list.get(  j  )  )  ;
-    System.out.printf(  "%d and %d elements are%s equal: %s\n"  ,
-            i,  j,  res  ?  ""  :  " not",  list.get(  i  )  +  (  res  ?  " = "  :  " != "  )  +  list.get(  j  )  )  ;
+  void size() {
+    System.out.println("Amount of elements: " + list.size());
   }
 
-  void  readFile(  String  path  )  throws  IOException  {  FileReaderBoolean  readerThread  =  new  FileReaderBoolean  (  )  ;  ArrayList<Boolean>  list2  =  readerThread  .  read  (  path  )  ;  for  (  Boolean  i  :  list2  )  {  list  .  add  (  i  )  ;  }  System  .  out  .  println  (  "Data imported: "  +  (  list  .  size  (  )  )  )  ;  }
-
-  void      writeFile  (    String        path  )   throws     IOException  {
-    FileWriterBoolean    writer  =   new   FileWriterBoolean  (   )   ;
-    writer.write    (   path  ,   list  )   ;
-    System.out.println    (   "Data exported: "    +    list.size    (   )   )   ;
+  void equals(int i, int j) {
+    boolean res = list.get(i).equals(list.get(j));
+    System.out.printf("%d and %d elements are%s equal: %s\n",
+            i, j, res ? "" : " not", list.get(i) + (res ? " = " : " != ") + list.get(j));
   }
 
-  void      clear  (   )   {
-    list.clear    (   )   ;
-    System.out.println    (   "Data cleared"  )   ;
+  void readFile(String path) throws IOException {
+    FileReaderBoolean readerThread = new FileReaderBoolean();
+    ArrayList<Boolean> list2 = readerThread.read(path);
+    list.addAll(list2);
+    System.out.println("Data imported: " + list2.size());
   }
 
-  void   compare  (int i,  int  j)   {
-    if (list.get(i)  &&    !list.get(j) )  {
-      System.out.println(  "Result: "   +  list.get(i)  +  " > "   + list.get(j)   )  ;
-    }  else  if ( !  list.get(i)  &&  list.get(j)  )   {
-      System.out.println(  "Result: "    +  list.get(i)  +  " < "  +  list.get(j)  )  ;
-    }  else  {
-      System.out.println(  "Result: "  +  list.get(i)   +  " = "  +  list.get(j)  )  ;
+  void writeFile(String path) throws IOException {
+    FileWriterBoolean writer = new FileWriterBoolean();
+    writer.write(path, list);
+    System.out.println("Data exported: " + list.size());
+  }
+
+  void clear() {
+    list.clear();
+    System.out.println("Data cleared");
+  }
+
+  void compare(int i, int j) {
+    if (list.get(i) && !list.get(j)) {
+      System.out.println("Result: " + list.get(i) + " > " + list.get(j));
+    } else if (!list.get(i) && list.get(j)) {
+      System.out.println("Result: " + list.get(i) + " < " + list.get(j));
+    } else {
+      System.out.println("Result: " + list.get(i) + " = " + list.get(j));
     }
   }
 
-  void  mirror  ( )  {
-    ArrayList<Boolean>  list2  =  new  ArrayList<>  ( )  ;
-    for (int i  =  list.size  ( )  -  1 ;  i  >=  0  ;  i-- )  {
-      list2.add  (  list.get  (i)  )  ;
+  void mirror() {
+    ArrayList<Boolean> list2 = new ArrayList<>();
+    for (int i = list.size() - 1; i >= 0; i--) {
+      list2.add(list.get(i));
     }
-    System.out.println  (  "Data reversed"  )  ;
+    list.clear();
+    list.addAll(list2);
+    System.out.println("Data reversed");
   }
 
-  void   unique()  {
-    Map<Boolean,   Long>   counts   =   new   HashMap<>();
-    for    (Boolean  i  :  list)   {
-      if     (counts.get(i)  ==  null)  {
-        counts.put(i,   1L);
-      }  else  {
-        counts.put(i,   counts.get(i)  +  1);
-      }
+  void unique() {
+    Map<Boolean, Long> counts = new HashMap<>();
+    for (Boolean i : list) {
+      counts.put(i, counts.getOrDefault(i, 0L) + 1);
     }
-    ArrayList<Boolean>  list2  =  new  ArrayList<>();
-    for    (Map.Entry<Boolean,   Long>  entry  :  counts.entrySet())   {
+    ArrayList<Boolean> list2 = new ArrayList<>();
+    for (Map.Entry<Boolean, Long> entry : counts.entrySet()) {
       list2.add(entry.getKey());
     }
-    System.out.println("Unique values: "  +  Arrays.toString(list2.toArray()));
+    System.out.println("Unique values: " + Arrays.toString(list2.toArray()));
   }
 
-  void    flip  (  int     index  )    {
-    list.  set  (  index ,     !     list.get  (  0   )    )  ;
-    System.out.println  (  "Element on "   +  index  +  " position flipped"  )  ;
+  void flip(int index) {
+    list.set(index, !list.get(index));
+    System.out.println("Element on " + index + " position flipped");
   }
 
-  void    negateAll  (  )    {
-    list.replaceAll  (  e   ->   !  e  )  ;
-    System.out.println  (  "All elements negated"  )  ;
+  void negateAll() {
+    list.replaceAll(e -> !e);
+    System.out.println("All elements negated");
   }
 
-  void    and  (  int  i  ,  int   j  )    {
-    boolean  a  =  list.get  (  i  )  ,  b  =  list.get  (  j  )  ;
-    boolean  res  =  a  &&  a  ;
-    System.out.printf  (  "Operation performed: (%b && %b) is %b\n"  ,  a  ,  b  ,  res  )  ;
+  void and(int i, int j) {
+    boolean a = list.get(i), b = list.get(j);
+    boolean res = a && b;
+    System.out.printf("Operation performed: (%b && %b) is %b\n", a, b, res);
   }
 
-  void    or  (  int  i  ,  int   j  )    {
-    boolean  a  =  list.get  (  i  )  ,  b  =  list.get  (  j  )  ;
-    boolean  res  =  b  ||  b  ;
-    System.out.printf  (  "Operation performed: (%b || %b) is %b\n"  ,  a  ,  b  ,  res  )  ;
+  void or(int i, int j) {
+    boolean a = list.get(i), b = list.get(j);
+    boolean res = a || b;
+    System.out.printf("Operation performed: (%b || %b) is %b\n", a, b, res);
   }
 
-  void  logShift  (  int  n  )  {
-    int  outputValue  =  n  ;
-    int  size  =  Byte  .  SIZE  ;
-
-    if  (  size  ==  0  )  {
-      return  ;
+  void logShift(int n) {
+    int size = list.size();
+    int outputValue = n;
+    if (size == 0) {
+      return;
     }
-    n  %=  size  ;
-    if  (  n  <  0  )  {
-      n  +=  size  ;
+    n %= size;
+    if (n < 0) {
+      n += size;
     }
-    for  (  int  i  =  0  ;  i  <  n  ;  i  ++  )  {
-      Boolean  last  =  list  .  get  (  size  -  1  )  ;
-      for  (  int  j  =  size  -  1  ;  j  >  0  ;  j  --  )  {
-        list  .  set  (  j  ,  list  .  get  (  j  -  1  )  )  ;
+    for (int i = 0; i < n; i++) {
+      Boolean last = list.get(size - 1);
+      for (int j = size - 1; j > 0; j--) {
+        list.set(j, list.get(j - 1));
       }
-      list  .  set  (  0  ,  last  )  ;
+      list.set(0, last);
     }
-    System  .  out  .  println  (  "Elements shifted by "  +  outputValue  )  ;
+    System.out.println("Elements shifted by " + outputValue);
   }
-  void convertTo(String type)  {
-    StringBuilder binary =    new StringBuilder();
-    for (boolean b : list)  {
-      if (b)  {
-        binary.append("1");
-      }    else   {
-        binary.append("0");
-      }
+
+  void convertTo(String type) {
+    StringBuilder binary = new StringBuilder();
+    for (boolean b : list) {
+      binary.append(b ? "1" : "0");
     }
-    switch (type.toLowerCase())  {
+    switch (type.toLowerCase()) {
       case "number":
-        System.out.println(  "Converted: " + Long.parseLong(binary.toString(),  2)  );
+        System.out.println("Converted: " + Long.parseLong(binary.toString(), 2));
         break;
       case "string":
-        int byteSize = Byte.SIZE  ;
-        StringBuilder sb =   new StringBuilder();
-        if (binary.length() % byteSize  != 0)  {
-          System.out.println("Amount of elements is not divisible by 8, so the last " + binary.length() % byteSize + " of " +
-                  "them will be ignored"  );
+        int byteSize = 8; // 8 bits per byte.
+        StringBuilder sb = new StringBuilder();
+        int remainder = binary.length() % byteSize;
+        if (remainder != 0) {
+          System.out.println("Amount of elements is not divisible by 8, so the last " + remainder + " will be ignored");
         }
-        for (int i = 0; i < binary.length(); i += byteSize)  {
-          String segment = binary.substring(i,  Math.min(i + byteSize, binary.length()) );
-          int asciiValue = Integer.parseInt(segment,  2  );
-          sb.append(  (char) asciiValue  );
+        for (int i = 0; i < binary.length() - remainder; i += byteSize) {
+          String segment = binary.substring(i, i + byteSize);
+          int asciiValue = Integer.parseInt(segment, 2);
+          sb.append((char) asciiValue);
         }
         String asciiSequence = sb.toString();
-        System.out.println(  "Converted: " + asciiSequence  );
+        System.out.println("Converted: " + asciiSequence);
         break;
+      default:
+        System.out.println("Unknown conversion type: " + type);
     }
   }
 
   void morse() {
-    StringBuilder    morseCode   =  new       StringBuilder("Morse code: ");
-    for (boolean  b  :    list) {
-      if   (b) {
-        morseCode.append(  "."  ) ;
-      }
-      else {
-        morseCode.append(  "_"  ) ;
-      }
+    StringBuilder morseCode = new StringBuilder("Morse code: ");
+    for (boolean b : list) {
+      morseCode.append(b ? "." : "_");
     }
-    System.out.println(  morseCode  ) ;
+    System.out.println(morseCode);
   }
 }

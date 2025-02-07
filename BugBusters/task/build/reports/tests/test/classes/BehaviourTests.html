@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.433s</div>
+<div class="counter">0.257s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">start</td>
-<td class="success">0.433s</td>
+<td class="success">0.257s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -88,7 +88,7 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>?[1;31m
-Start test 1?[0m
+Start test 1 (58)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -97,7 +97,7 @@ Possible actions:
 0. Quit
 &gt; 0
 ?[1;31m
-Start test 2?[0m
+Start test 2 (59)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -107,7 +107,7 @@ Possible actions:
 &gt; 1
 Perform action:
 ?[1;31m
-Start test 3?[0m
+Start test 3 (60)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -117,7 +117,7 @@ Possible actions:
 &gt; 2
 Perform action:
 ?[1;31m
-Start test 4?[0m
+Start test 4 (61)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -127,7 +127,7 @@ Possible actions:
 &gt; 3
 Perform action:
 ?[1;31m
-Start test 5?[0m
+Start test 5 (62)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -178,13 +178,13 @@ Boolean-specific commands:
 ===================================================================================================================
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /writeFile data.txt
 Data exported: 1
 Perform action:
 &gt; /readFile data.txt
-Data imported: 2
+Data imported: 1
 Perform action:
 &gt; /size
 Amount of elements: 2
@@ -231,10 +231,10 @@ Perform action:
 All elements negated
 Perform action:
 &gt; /and 0 1
-Operation performed: (true &amp;&amp; false) is true
+Operation performed: (true &amp;&amp; false) is false
 Perform action:
 &gt; /or 0 1
-Operation performed: (true || false) is false
+Operation performed: (true || false) is true
 Perform action:
 &gt; /logShift 0
 Elements shifted by 0
@@ -266,7 +266,7 @@ Possible actions:
 0. Quit
 &gt; 0
 ?[1;31m
-Start test 6?[0m
+Start test 6 (63)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -324,7 +324,7 @@ Perform action:
 Data exported: 1
 Perform action:
 &gt; /readFile data.txt
-Data imported: 2
+Data imported: 1
 Perform action:
 &gt; /size
 Amount of elements: 2
@@ -374,13 +374,13 @@ Perform action:
 Calculation performed: 1 * 1 = 1
 Perform action:
 &gt; /divide 0 1
-Calculation performed: 1 / 1 = 1
+Calculation performed: 1 / 1 = 1.000000
 Perform action:
 &gt; /pow 0 1
 Calculation performed: 1 ^ 1 = 1
 Perform action:
 &gt; /factorial 0
-Calculation performed: 1! = 2
+Calculation performed: 1! = 1
 Perform action:
 &gt; /sumAll
 Sum of all elements: 2
@@ -409,7 +409,7 @@ Possible actions:
 0. Quit
 &gt; 0
 ?[1;31m
-Start test 7?[0m
+Start test 7 (64)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -467,7 +467,7 @@ Perform action:
 Data exported: 1
 Perform action:
 &gt; /readFile data.txt
-Data imported: 2
+Data imported: 1
 Perform action:
 &gt; /size
 Amount of elements: 2
@@ -511,7 +511,7 @@ Perform action:
 Concatenated string: CakeIsALieCakeIsALie
 Perform action:
 &gt; /swapCase 0
-&quot;CakeIsALie&quot; string with swapped case: CAKEISALIE
+&quot;CakeIsALie&quot; string with swapped case: cAKEiSalIE
 Perform action:
 &gt; /upper 0
 Uppercase &quot;CakeIsALie&quot; string: CAKEISALIE
@@ -553,7 +553,7 @@ Possible actions:
 0. Quit
 &gt; 0
 ?[1;31m
-Start test 8?[0m
+Start test 8 (65)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -764,7 +764,7 @@ Possible actions:
 0. Quit
 &gt; 0
 ?[1;31m
-Start test 9?[0m
+Start test 9 (66)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -976,7 +976,7 @@ Possible actions:
 0. Quit
 &gt; 0
 ?[1;31m
-Start test 10?[0m
+Start test 10 (67)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1188,7 +1188,7 @@ Possible actions:
 0. Quit
 &gt; 0
 ?[1;31m
-Start test 11?[0m
+Start test 11 (68)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1198,35 +1198,35 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /printAll oneLine
 List of elements:
 true
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /printAll oneLine
 List of elements:
 true false
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /printAll oneLine
 List of elements:
 true false false
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /printAll oneLine
 List of elements:
 true false false true
 Perform action:
 ?[1;31m
-Start test 12?[0m
+Start test 12 (69)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1264,7 +1264,7 @@ List of elements:
 2 -1 -1 2
 Perform action:
 ?[1;31m
-Start test 13?[0m
+Start test 13 (70)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1302,7 +1302,7 @@ List of elements:
 CakeIsALie CakeIsATruth CakeIsATruth CakeIsALie
 Perform action:
 ?[1;31m
-Start test 14?[0m
+Start test 14 (71)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1312,16 +1312,16 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /print 0
 Element on 0 position is true
@@ -1336,7 +1336,7 @@ Perform action:
 Element on 3 position is true
 Perform action:
 ?[1;31m
-Start test 15?[0m
+Start test 15 (72)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1370,7 +1370,7 @@ Perform action:
 Element on 3 position is 2
 Perform action:
 ?[1;31m
-Start test 16?[0m
+Start test 16 (73)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1404,7 +1404,7 @@ Perform action:
 Element on 3 position is CakeIsALie
 Perform action:
 ?[1;31m
-Start test 17?[0m
+Start test 17 (74)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1414,16 +1414,16 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /remove 3
 Element on 3 position removed
@@ -1454,7 +1454,7 @@ List of elements:
 
 Perform action:
 ?[1;31m
-Start test 18?[0m
+Start test 18 (75)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1504,7 +1504,7 @@ List of elements:
 
 Perform action:
 ?[1;31m
-Start test 19?[0m
+Start test 19 (76)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1554,7 +1554,7 @@ List of elements:
 
 Perform action:
 ?[1;31m
-Start test 20?[0m
+Start test 20 (77)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1564,16 +1564,16 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /replace 3 false
 Element on 3 position replaced with false
@@ -1604,7 +1604,7 @@ List of elements:
 false false false false
 Perform action:
 ?[1;31m
-Start test 21?[0m
+Start test 21 (78)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1654,7 +1654,7 @@ List of elements:
 42 42 42 42
 Perform action:
 ?[1;31m
-Start test 22?[0m
+Start test 22 (79)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1704,7 +1704,7 @@ List of elements:
 tmp tmp tmp tmp
 Perform action:
 ?[1;31m
-Start test 23?[0m
+Start test 23 (80)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1714,16 +1714,16 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /replaceAll true false
 Each true element replaced with false
@@ -1733,7 +1733,7 @@ List of elements:
 false false false false
 Perform action:
 ?[1;31m
-Start test 24?[0m
+Start test 24 (81)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1762,7 +1762,7 @@ List of elements:
 42 -1 -1 42
 Perform action:
 ?[1;31m
-Start test 25?[0m
+Start test 25 (82)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1791,7 +1791,7 @@ List of elements:
 tmp CakeIsATruth CakeIsATruth tmp
 Perform action:
 ?[1;31m
-Start test 26?[0m
+Start test 26 (83)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1801,16 +1801,16 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /index true
 First occurrence of true is on 0 position
@@ -1825,7 +1825,7 @@ Perform action:
 First occurrence of true is on 0 position
 Perform action:
 ?[1;31m
-Start test 27?[0m
+Start test 27 (84)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1859,7 +1859,7 @@ Perform action:
 First occurrence of 2 is on 0 position
 Perform action:
 ?[1;31m
-Start test 28?[0m
+Start test 28 (85)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1893,7 +1893,7 @@ Perform action:
 First occurrence of CakeIsALie is on 0 position
 Perform action:
 ?[1;31m
-Start test 29?[0m
+Start test 29 (86)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1903,16 +1903,16 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /sort ascending
 Memory sorted ascending
@@ -1922,7 +1922,7 @@ List of elements:
 false false true true
 Perform action:
 ?[1;31m
-Start test 30?[0m
+Start test 30 (87)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1951,7 +1951,7 @@ List of elements:
 -1 -1 2 2
 Perform action:
 ?[1;31m
-Start test 31?[0m
+Start test 31 (88)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1980,7 +1980,7 @@ List of elements:
 CakeIsALie CakeIsALie CakeIsATruth CakeIsATruth
 Perform action:
 ?[1;31m
-Start test 32?[0m
+Start test 32 (89)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1990,16 +1990,16 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /frequency
 Frequency:
@@ -2007,7 +2007,7 @@ false: 2
 true: 2
 Perform action:
 ?[1;31m
-Start test 33?[0m
+Start test 33 (90)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2034,7 +2034,7 @@ Frequency:
 2: 2
 Perform action:
 ?[1;31m
-Start test 34?[0m
+Start test 34 (91)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2061,7 +2061,7 @@ CakeIsATruth: 2
 CakeIsALie: 2
 Perform action:
 ?[1;31m
-Start test 35?[0m
+Start test 35 (92)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2071,16 +2071,16 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /count true
 Amount of true: 2
@@ -2095,7 +2095,7 @@ Perform action:
 Amount of true: 2
 Perform action:
 ?[1;31m
-Start test 36?[0m
+Start test 36 (93)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2129,7 +2129,7 @@ Perform action:
 Amount of 2: 2
 Perform action:
 ?[1;31m
-Start test 37?[0m
+Start test 37 (94)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2163,7 +2163,7 @@ Perform action:
 Amount of CakeIsALie: 2
 Perform action:
 ?[1;31m
-Start test 38?[0m
+Start test 38 (95)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2173,22 +2173,22 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /size
 Amount of elements: 4
 Perform action:
 ?[1;31m
-Start test 39?[0m
+Start test 39 (96)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2213,7 +2213,7 @@ Perform action:
 Amount of elements: 4
 Perform action:
 ?[1;31m
-Start test 40?[0m
+Start test 40 (97)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2238,7 +2238,7 @@ Perform action:
 Amount of elements: 4
 Perform action:
 ?[1;31m
-Start test 41?[0m
+Start test 41 (98)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2248,16 +2248,16 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /equals 0 0
 0 and 0 elements are equal: true = true
@@ -2308,7 +2308,7 @@ Perform action:
 3 and 3 elements are equal: true = true
 Perform action:
 ?[1;31m
-Start test 42?[0m
+Start test 42 (99)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2378,7 +2378,7 @@ Perform action:
 3 and 3 elements are equal: 2 = 2
 Perform action:
 ?[1;31m
-Start test 43?[0m
+Start test 43 (100)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2448,7 +2448,7 @@ Perform action:
 3 and 3 elements are equal: CakeIsALie = CakeIsALie
 Perform action:
 ?[1;31m
-Start test 44?[0m
+Start test 44 (101)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2458,16 +2458,16 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /clear
 Data cleared
@@ -2477,7 +2477,7 @@ List of elements:
 
 Perform action:
 ?[1;31m
-Start test 45?[0m
+Start test 45 (102)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2506,7 +2506,7 @@ List of elements:
 
 Perform action:
 ?[1;31m
-Start test 46?[0m
+Start test 46 (103)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2535,7 +2535,7 @@ List of elements:
 
 Perform action:
 ?[1;31m
-Start test 47?[0m
+Start test 47 (104)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2545,16 +2545,16 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /compare 0 0
 Result: true = true
@@ -2605,7 +2605,7 @@ Perform action:
 Result: true = true
 Perform action:
 ?[1;31m
-Start test 48?[0m
+Start test 48 (105)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2675,7 +2675,7 @@ Perform action:
 Result: 2 = 2
 Perform action:
 ?[1;31m
-Start test 49?[0m
+Start test 49 (106)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2745,7 +2745,7 @@ Perform action:
 Result: CakeIsALie = CakeIsALie
 Perform action:
 ?[1;31m
-Start test 50?[0m
+Start test 50 (107)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2755,16 +2755,16 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /mirror
 Data reversed
@@ -2774,7 +2774,7 @@ List of elements:
 true false false true
 Perform action:
 ?[1;31m
-Start test 51?[0m
+Start test 51 (108)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2803,7 +2803,7 @@ List of elements:
 2 -1 -1 2
 Perform action:
 ?[1;31m
-Start test 52?[0m
+Start test 52 (109)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2832,7 +2832,7 @@ List of elements:
 CakeIsALie CakeIsATruth CakeIsATruth CakeIsALie
 Perform action:
 ?[1;31m
-Start test 53?[0m
+Start test 53 (110)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2842,22 +2842,22 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /unique
 Unique values: [false, true]
 Perform action:
 ?[1;31m
-Start test 54?[0m
+Start test 54 (111)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2882,7 +2882,7 @@ Perform action:
 Unique values: [-1, 2]
 Perform action:
 ?[1;31m
-Start test 55?[0m
+Start test 55 (112)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2907,7 +2907,7 @@ Perform action:
 Unique values: [CakeIsATruth, CakeIsALie]
 Perform action:
 ?[1;31m
-Start test 56?[0m
+Start test 56 (113)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2924,7 +2924,7 @@ List of elements:
 true true true
 Perform action:
 ?[1;31m
-Start test 57?[0m
+Start test 57 (114)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2941,7 +2941,7 @@ List of elements:
 2147483647 2147483647 2147483647
 Perform action:
 ?[1;31m
-Start test 58?[0m
+Start test 58 (115)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2958,7 +2958,7 @@ List of elements:
 CakeIsALie CakeIsALie CakeIsALie
 Perform action:
 ?[1;31m
-Start test 59?[0m
+Start test 59 (116)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2968,16 +2968,16 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /writeFile result.txt
 Data exported: 4
@@ -2993,7 +2993,7 @@ List of elements:
 true false false true
 Perform action:
 ?[1;31m
-Start test 60?[0m
+Start test 60 (117)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3028,7 +3028,7 @@ List of elements:
 2 -1 -1 2
 Perform action:
 ?[1;31m
-Start test 61?[0m
+Start test 61 (118)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3063,7 +3063,7 @@ List of elements:
 CakeIsALie CakeIsATruth CakeIsATruth CakeIsALie
 Perform action:
 ?[1;31m
-Start test 62?[0m
+Start test 62 (119)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3088,7 +3088,7 @@ Perform action:
 Calculation performed: 2 * 4 = 8
 Perform action:
 &gt; /divide 1 0
-Calculation performed: 4 / 2 = 2
+Calculation performed: 4 / 2 = 2.000000
 Perform action:
 &gt; /pow 0 1
 Calculation performed: 2 ^ 4 = 16
@@ -3103,7 +3103,7 @@ Perform action:
 Average of all elements: 3
 Perform action:
 ?[1;31m
-Start test 63?[0m
+Start test 63 (120)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3148,7 +3148,7 @@ Strings that match provided regex:
 [world!]
 Perform action:
 ?[1;31m
-Start test 64?[0m
+Start test 64 (121)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3158,28 +3158,28 @@ Possible actions:
 &gt; 1
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add true
-Element  true  added
+Element true added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /add false
-Element  false  added
+Element false added
 Perform action:
 &gt; /flip 0
 Element on 0 position flipped
@@ -3235,7 +3235,7 @@ Perform action:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.5</a> at Feb 6, 2025, 2:02:06 p.m.</p>
+<a href="http://www.gradle.org">Gradle 8.5</a> at Feb 6, 2025, 5:02:08 p.m.</p>
 </div>
 </div>
 </body>
