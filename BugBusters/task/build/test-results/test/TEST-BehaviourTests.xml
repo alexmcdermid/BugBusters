@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BehaviourTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-11T20:30:45" hostname="PF4DQ3YG" time="0.279">
+<testsuite name="BehaviourTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-11T22:40:03" hostname="PF4DQ3YG" time="0.551">
   <properties/>
-  <testcase name="start" classname="BehaviourTests" time="0.279"/>
+  <testcase name="start" classname="BehaviourTests" time="0.551"/>
   <system-out><![CDATA[?[1;31m
-Start test 1 (28)?[0m
+Start test 1 (2)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -12,7 +12,7 @@ Possible actions:
 0. Quit
 > 0
 ?[1;31m
-Start test 2 (29)?[0m
+Start test 2 (3)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -22,7 +22,7 @@ Possible actions:
 > 1
 Perform action:
 ?[1;31m
-Start test 3 (30)?[0m
+Start test 3 (4)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -32,7 +32,7 @@ Possible actions:
 > 2
 Perform action:
 ?[1;31m
-Start test 4 (31)?[0m
+Start test 4 (5)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -42,7 +42,7 @@ Possible actions:
 > 3
 Perform action:
 ?[1;31m
-Start test 5 (32)?[0m
+Start test 5 (6)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -181,7 +181,7 @@ Possible actions:
 0. Quit
 > 0
 ?[1;31m
-Start test 6 (33)?[0m
+Start test 6 (7)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -324,7 +324,7 @@ Possible actions:
 0. Quit
 > 0
 ?[1;31m
-Start test 7 (34)?[0m
+Start test 7 (8)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -468,7 +468,7 @@ Possible actions:
 0. Quit
 > 0
 ?[1;31m
-Start test 8 (35)?[0m
+Start test 8 (9)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -679,7 +679,7 @@ Possible actions:
 0. Quit
 > 0
 ?[1;31m
-Start test 9 (36)?[0m
+Start test 9 (10)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -891,7 +891,7 @@ Possible actions:
 0. Quit
 > 0
 ?[1;31m
-Start test 10 (37)?[0m
+Start test 10 (11)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1103,7 +1103,7 @@ Possible actions:
 0. Quit
 > 0
 ?[1;31m
-Start test 11 (38)?[0m
+Start test 11 (12)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1141,7 +1141,7 @@ List of elements:
 true false false true
 Perform action:
 ?[1;31m
-Start test 12 (39)?[0m
+Start test 12 (13)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1179,7 +1179,7 @@ List of elements:
 2 -1 -1 2
 Perform action:
 ?[1;31m
-Start test 13 (40)?[0m
+Start test 13 (14)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1217,7 +1217,7 @@ List of elements:
 CakeIsALie CakeIsATruth CakeIsATruth CakeIsALie
 Perform action:
 ?[1;31m
-Start test 14 (41)?[0m
+Start test 14 (15)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1251,7 +1251,7 @@ Perform action:
 Element on 3 position is true
 Perform action:
 ?[1;31m
-Start test 15 (42)?[0m
+Start test 15 (16)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1285,7 +1285,7 @@ Perform action:
 Element on 3 position is 2
 Perform action:
 ?[1;31m
-Start test 16 (43)?[0m
+Start test 16 (17)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1319,7 +1319,7 @@ Perform action:
 Element on 3 position is CakeIsALie
 Perform action:
 ?[1;31m
-Start test 17 (44)?[0m
+Start test 17 (18)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1369,7 +1369,7 @@ List of elements:
 
 Perform action:
 ?[1;31m
-Start test 18 (45)?[0m
+Start test 18 (19)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1419,7 +1419,7 @@ List of elements:
 
 Perform action:
 ?[1;31m
-Start test 19 (46)?[0m
+Start test 19 (20)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1469,7 +1469,7 @@ List of elements:
 
 Perform action:
 ?[1;31m
-Start test 20 (47)?[0m
+Start test 20 (21)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1519,7 +1519,7 @@ List of elements:
 false false false false
 Perform action:
 ?[1;31m
-Start test 21 (48)?[0m
+Start test 21 (22)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1569,7 +1569,7 @@ List of elements:
 42 42 42 42
 Perform action:
 ?[1;31m
-Start test 22 (49)?[0m
+Start test 22 (23)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1619,7 +1619,7 @@ List of elements:
 tmp tmp tmp tmp
 Perform action:
 ?[1;31m
-Start test 23 (50)?[0m
+Start test 23 (24)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1648,7 +1648,7 @@ List of elements:
 false false false false
 Perform action:
 ?[1;31m
-Start test 24 (51)?[0m
+Start test 24 (25)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1677,7 +1677,7 @@ List of elements:
 42 -1 -1 42
 Perform action:
 ?[1;31m
-Start test 25 (52)?[0m
+Start test 25 (26)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1706,7 +1706,7 @@ List of elements:
 tmp CakeIsATruth CakeIsATruth tmp
 Perform action:
 ?[1;31m
-Start test 26 (53)?[0m
+Start test 26 (27)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1740,7 +1740,7 @@ Perform action:
 First occurrence of true is on 0 position
 Perform action:
 ?[1;31m
-Start test 27 (54)?[0m
+Start test 27 (28)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1774,7 +1774,7 @@ Perform action:
 First occurrence of 2 is on 0 position
 Perform action:
 ?[1;31m
-Start test 28 (55)?[0m
+Start test 28 (29)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1808,7 +1808,7 @@ Perform action:
 First occurrence of CakeIsALie is on 0 position
 Perform action:
 ?[1;31m
-Start test 29 (56)?[0m
+Start test 29 (30)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1837,7 +1837,7 @@ List of elements:
 false false true true
 Perform action:
 ?[1;31m
-Start test 30 (57)?[0m
+Start test 30 (31)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1866,7 +1866,7 @@ List of elements:
 -1 -1 2 2
 Perform action:
 ?[1;31m
-Start test 31 (58)?[0m
+Start test 31 (32)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1895,7 +1895,7 @@ List of elements:
 CakeIsALie CakeIsALie CakeIsATruth CakeIsATruth
 Perform action:
 ?[1;31m
-Start test 32 (59)?[0m
+Start test 32 (33)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1922,7 +1922,7 @@ false: 2
 true: 2
 Perform action:
 ?[1;31m
-Start test 33 (60)?[0m
+Start test 33 (34)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1949,7 +1949,7 @@ Frequency:
 2: 2
 Perform action:
 ?[1;31m
-Start test 34 (61)?[0m
+Start test 34 (35)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1976,7 +1976,7 @@ CakeIsATruth: 2
 CakeIsALie: 2
 Perform action:
 ?[1;31m
-Start test 35 (62)?[0m
+Start test 35 (36)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2010,7 +2010,7 @@ Perform action:
 Amount of true: 2
 Perform action:
 ?[1;31m
-Start test 36 (63)?[0m
+Start test 36 (37)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2044,7 +2044,7 @@ Perform action:
 Amount of 2: 2
 Perform action:
 ?[1;31m
-Start test 37 (64)?[0m
+Start test 37 (38)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2078,7 +2078,7 @@ Perform action:
 Amount of CakeIsALie: 2
 Perform action:
 ?[1;31m
-Start test 38 (65)?[0m
+Start test 38 (39)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2103,7 +2103,7 @@ Perform action:
 Amount of elements: 4
 Perform action:
 ?[1;31m
-Start test 39 (66)?[0m
+Start test 39 (40)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2128,7 +2128,7 @@ Perform action:
 Amount of elements: 4
 Perform action:
 ?[1;31m
-Start test 40 (67)?[0m
+Start test 40 (41)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2153,7 +2153,7 @@ Perform action:
 Amount of elements: 4
 Perform action:
 ?[1;31m
-Start test 41 (68)?[0m
+Start test 41 (42)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2223,7 +2223,7 @@ Perform action:
 3 and 3 elements are equal: true = true
 Perform action:
 ?[1;31m
-Start test 42 (69)?[0m
+Start test 42 (43)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2293,7 +2293,7 @@ Perform action:
 3 and 3 elements are equal: 2 = 2
 Perform action:
 ?[1;31m
-Start test 43 (70)?[0m
+Start test 43 (44)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2363,7 +2363,7 @@ Perform action:
 3 and 3 elements are equal: CakeIsALie = CakeIsALie
 Perform action:
 ?[1;31m
-Start test 44 (71)?[0m
+Start test 44 (45)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2392,7 +2392,7 @@ List of elements:
 
 Perform action:
 ?[1;31m
-Start test 45 (72)?[0m
+Start test 45 (46)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2421,7 +2421,7 @@ List of elements:
 
 Perform action:
 ?[1;31m
-Start test 46 (73)?[0m
+Start test 46 (47)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2450,7 +2450,7 @@ List of elements:
 
 Perform action:
 ?[1;31m
-Start test 47 (74)?[0m
+Start test 47 (48)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2520,7 +2520,7 @@ Perform action:
 Result: true = true
 Perform action:
 ?[1;31m
-Start test 48 (75)?[0m
+Start test 48 (49)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2590,7 +2590,7 @@ Perform action:
 Result: 2 = 2
 Perform action:
 ?[1;31m
-Start test 49 (76)?[0m
+Start test 49 (50)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2660,7 +2660,7 @@ Perform action:
 Result: CakeIsALie = CakeIsALie
 Perform action:
 ?[1;31m
-Start test 50 (77)?[0m
+Start test 50 (51)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2689,7 +2689,7 @@ List of elements:
 true false false true
 Perform action:
 ?[1;31m
-Start test 51 (78)?[0m
+Start test 51 (52)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2718,7 +2718,7 @@ List of elements:
 2 -1 -1 2
 Perform action:
 ?[1;31m
-Start test 52 (79)?[0m
+Start test 52 (53)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2747,7 +2747,7 @@ List of elements:
 CakeIsALie CakeIsATruth CakeIsATruth CakeIsALie
 Perform action:
 ?[1;31m
-Start test 53 (80)?[0m
+Start test 53 (54)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2772,7 +2772,7 @@ Perform action:
 Unique values: [false, true]
 Perform action:
 ?[1;31m
-Start test 54 (81)?[0m
+Start test 54 (55)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2797,7 +2797,7 @@ Perform action:
 Unique values: [-1, 2]
 Perform action:
 ?[1;31m
-Start test 55 (82)?[0m
+Start test 55 (56)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2822,7 +2822,7 @@ Perform action:
 Unique values: [CakeIsATruth, CakeIsALie]
 Perform action:
 ?[1;31m
-Start test 56 (83)?[0m
+Start test 56 (57)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2839,7 +2839,7 @@ List of elements:
 true true true
 Perform action:
 ?[1;31m
-Start test 57 (84)?[0m
+Start test 57 (58)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2856,7 +2856,7 @@ List of elements:
 2147483647 2147483647 2147483647
 Perform action:
 ?[1;31m
-Start test 58 (85)?[0m
+Start test 58 (59)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2873,7 +2873,7 @@ List of elements:
 CakeIsALie CakeIsALie CakeIsALie
 Perform action:
 ?[1;31m
-Start test 59 (86)?[0m
+Start test 59 (60)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2908,7 +2908,7 @@ List of elements:
 true false false true
 Perform action:
 ?[1;31m
-Start test 60 (87)?[0m
+Start test 60 (61)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2943,7 +2943,7 @@ List of elements:
 2 -1 -1 2
 Perform action:
 ?[1;31m
-Start test 61 (88)?[0m
+Start test 61 (62)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2978,7 +2978,7 @@ List of elements:
 CakeIsALie CakeIsATruth CakeIsATruth CakeIsALie
 Perform action:
 ?[1;31m
-Start test 62 (89)?[0m
+Start test 62 (63)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3018,7 +3018,7 @@ Perform action:
 Average of all elements: 3
 Perform action:
 ?[1;31m
-Start test 63 (90)?[0m
+Start test 63 (64)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3063,7 +3063,7 @@ Strings that match provided regex:
 [world!]
 Perform action:
 ?[1;31m
-Start test 64 (91)?[0m
+Start test 64 (65)?[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans

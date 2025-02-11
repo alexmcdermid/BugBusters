@@ -23,13 +23,25 @@ class Memory {
       String choice = scanner.next();
       switch (choice) {
         case "1":
-          new BooleanMemorize().Run();
+          BooleanMemorize booleanMemorize = new BooleanMemorize();
+          booleanMemorize.Run();
+          booleanMemorize.dispose();
+          booleanMemorize = null;
+          System.gc();
           break;
         case "2":
-          new NumberMemorize().Run();
+          NumberMemorize numberMemorize = new NumberMemorize();
+          numberMemorize.Run();
+          numberMemorize.dispose();
+          numberMemorize = null;
+          System.gc();
           break;
         case "3":
-          new WordMemorize().Run();
+          WordMemorize wordMemorizer = new WordMemorize();
+          wordMemorizer.Run();
+          wordMemorizer.dispose();
+          wordMemorizer = null;
+          System.gc();
           break;
         case "0":
           return;

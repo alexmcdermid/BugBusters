@@ -18,7 +18,7 @@ import java.util.List;
  */
 class FileReaderInteger {
 
-  static ArrayList<Integer> list = new ArrayList<>();
+  ArrayList<Integer> list = new ArrayList<>();
 
   public ArrayList<Integer> read(String fileName) throws IOException {
     list.clear();

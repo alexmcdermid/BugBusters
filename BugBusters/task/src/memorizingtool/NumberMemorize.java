@@ -17,10 +17,10 @@ import java.util.*;
  */
 public class NumberMemorize {
 
-  static ArrayList<Integer> list = new ArrayList<>();
+  ArrayList<Integer> list = new ArrayList<>();
   boolean finished = false;
-  static List<Object> args = new ArrayList<>();
-  static Map<String, Class<?>[]> commands;
+  List<Object> args = new ArrayList<>();
+  Map<String, Class<?>[]> commands;
 
   public NumberMemorize() {
     list.clear();
@@ -123,6 +123,21 @@ public class NumberMemorize {
     }
   }
 
+  void dispose() {
+    if (list != null) {
+      list.clear();
+      list = null;
+    }
+    if (args != null) {
+      args.clear();
+      args = null;
+    }
+    if (commands != null) {
+      commands.clear();
+      commands = null;
+    }
+  }
+
   void help() {
     System.out.println(
             "===================================================================================================================\n" +
@@ -170,7 +185,11 @@ public class NumberMemorize {
   }
 
   void menu() {
+    list = null;
+    args = null;
+    commands = null;
     this.finished = true;
+    System.gc();
   }
 
   void add(int element) {

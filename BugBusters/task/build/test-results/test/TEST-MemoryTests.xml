@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MemoryTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-11T22:40:01" hostname="PF4DQ3YG" time="1.865">
+  <properties/>
+  <testcase name="start" classname="MemoryTests" time="1.865"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+0. Quit
+> 1
+Perform action:
+> /readFile booleans.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 1500000
+Perform action:
+> /count false
+Amount of false: 750000
+Perform action:
+> /readFile booleans.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 3000000
+Perform action:
+> /count false
+Amount of false: 1500000
+Perform action:
+> /readFile booleans.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 4500000
+Perform action:
+> /count false
+Amount of false: 2250000
+Perform action:
+> /readFile booleans.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 6000000
+Perform action:
+> /count false
+Amount of false: 3000000
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+0. Quit
+> 2
+Perform action:
+> /readFile numbers.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 1500000
+Perform action:
+> /count 2147483647
+Amount of 2147483647: 1500000
+Perform action:
+> /readFile numbers.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 3000000
+Perform action:
+> /count 2147483647
+Amount of 2147483647: 3000000
+Perform action:
+> /readFile numbers.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 4500000
+Perform action:
+> /count 2147483647
+Amount of 2147483647: 4500000
+Perform action:
+> /readFile numbers.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 6000000
+Perform action:
+> /count 2147483647
+Amount of 2147483647: 6000000
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+0. Quit
+> 3
+Perform action:
+> /readFile words.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 1500000
+Perform action:
+> /count CakeIsALie
+Amount of CakeIsALie: 1500000
+Perform action:
+> /readFile words.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 3000000
+Perform action:
+> /count CakeIsALie
+Amount of CakeIsALie: 3000000
+Perform action:
+> /readFile words.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 4500000
+Perform action:
+> /count CakeIsALie
+Amount of CakeIsALie: 4500000
+Perform action:
+> /readFile words.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 6000000
+Perform action:
+> /count CakeIsALie
+Amount of CakeIsALie: 6000000
+Perform action:
+> /menu
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+0. Quit
+> 0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

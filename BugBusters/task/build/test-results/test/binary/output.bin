@@ -6,61 +6,45 @@
 2. Memorize numbers
 3. Memorize words
 	0. Quit
-> 4
-Incorrect command
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-
-> integer
-Incorrect command
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> -2
-Incorrect command
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-[1;31m
-Start test 2[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
 > 1
 Perform action:
-> hey?
-No such command!
+> /readFile booleans.txt
+Data imported: 1500000
 Perform action:
-	> /smile
-No such command!
+> /size
+Amount of elements: 1500000
 Perform action:
-> /draw line
-No such command!
+> /count false
+Amount of false: 750000
 Perform action:
-> add true
-No such command!
+> /readFile booleans.txt
+Data imported: 1500000
 Perform action:
-> /add
-Incorrect amount of arguments
+> /size
+Amount of elements: 3000000
 Perform action:
-> /compare 2
-Incorrect amount of arguments
+> /count false
+Amount of false: 1500000
 Perform action:
-[1;31m
-Start test 3[0m
+> /readFile booleans.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 4500000
+Perform action:
+> /count false
+Amount of false: 2250000
+Perform action:
+> /readFile booleans.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 6000000
+Perform action:
+> /count false
+Amount of false: 3000000
+Perform action:
+> /menu
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -69,26 +53,43 @@
 	0. Quit
 > 2
 Perform action:
-> hey?
-No such command!
+> /readFile numbers.txt
+Data imported: 1500000
 Perform action:
-	> /smile
-No such command!
+> /size
+Amount of elements: 1500000
 Perform action:
-> /draw line
-No such command!
+> /count 2147483647
+Amount of 2147483647: 1500000
 Perform action:
-	> add 42
-No such command!
+> /readFile numbers.txt
+Data imported: 1500000
 Perform action:
-> /add
-Incorrect amount of arguments
+> /size
+Amount of elements: 3000000
 Perform action:
-> /compare 2
-Incorrect amount of arguments
+> /count 2147483647
+Amount of 2147483647: 3000000
 Perform action:
-[1;31m
-Start test 4[0m
+> /readFile numbers.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 4500000
+Perform action:
+> /count 2147483647
+Amount of 2147483647: 4500000
+Perform action:
+> /readFile numbers.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 6000000
+Perform action:
+> /count 2147483647
+Amount of 2147483647: 6000000
+Perform action:
+> /menu
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -97,783 +98,52 @@
 	0. Quit
 > 3
 Perform action:
-> hey?
-No such command!
+> /readFile words.txt
+Data imported: 1500000
 Perform action:
-	> /smile
-No such command!
+> /size
+Amount of elements: 1500000
 Perform action:
-> /draw line
-No such command!
+> /count CakeIsALie
+Amount of CakeIsALie: 1500000
 Perform action:
-
-> add tmp
-No such command!
+> /readFile words.txt
+Data imported: 1500000
 Perform action:
-> /add
-Incorrect amount of arguments
+> /size
+Amount of elements: 3000000
 Perform action:
-> /compare 2
-Incorrect amount of arguments
+> /count CakeIsALie
+Amount of CakeIsALie: 3000000
 Perform action:
-[1;31m
-Start test 5[0m
+> /readFile words.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 4500000
+Perform action:
+> /count CakeIsALie
+Amount of CakeIsALie: 4500000
+Perform action:
+> /readFile words.txt
+Data imported: 1500000
+Perform action:
+> /size
+Amount of elements: 6000000
+Perform action:
+> /count CakeIsALie
+Amount of CakeIsALie: 6000000
+Perform action:
+> /menu
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
 2. Memorize numbers
 3. Memorize words
 	0. Quit
-> 1
-Perform action:
-> /add true
-Element true added
-Perform action:
-> /add false
-Element false added
-Perform action:
-> /add false
-Element false added
-Perform action:
-> /add true
-Element true added
-Perform action:
-> /remove 5
-Index out of bounds!
-Perform action:
-> /print 5
-Index out of bounds!
-Perform action:
-> /replace 5 true
-Index out of bounds!
-Perform action:
-> /equals 5 2
-Index out of bounds!
-Perform action:
-> /compare 5 2
-Index out of bounds!
-Perform action:
-> /equals 2 5
-Index out of bounds!
-Perform action:
-> /compare 2 5
-Index out of bounds!
-Perform action:
-
-> /flip 5
-Index out of bounds!
-Perform action:
-> /and 5 2
-Index out of bounds!
-Perform action:
-> /and 2 5
-Index out of bounds!
-Perform action:
-
-> /or 5 2
-Index out of bounds!
-Perform action:
-
-> /or 2 5
-Index out of bounds!
-Perform action:
-[1;31m
-Start test 6[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 2
-Perform action:
-	> /add 2
-Element 2 added
-Perform action:
-
-> /add -1
-Element -1 added
-Perform action:
-
-> /add -1
-Element -1 added
-Perform action:
-	> /add 2
-Element 2 added
-Perform action:
-> /remove 5
-Index out of bounds!
-Perform action:
-> /print 5
-Index out of bounds!
-Perform action:
-> /replace 5 42
-Index out of bounds!
-Perform action:
-> /equals 5 2
-Index out of bounds!
-Perform action:
-> /compare 5 2
-Index out of bounds!
-Perform action:
-> /equals 2 5
-Index out of bounds!
-Perform action:
-> /compare 2 5
-Index out of bounds!
-Perform action:
-> /sum 5 2
-Index out of bounds!
-Perform action:
-> /sum 2 5
-Index out of bounds!
-Perform action:
-> /subtract 5 2
-Index out of bounds!
-Perform action:
-> /subtract 2 5
-Index out of bounds!
-Perform action:
-> /multiply 5 2
-Index out of bounds!
-Perform action:
-> /multiply 2 5
-Index out of bounds!
-Perform action:
-> /divide 5 2
-Index out of bounds!
-Perform action:
-> /divide 2 5
-Index out of bounds!
-Perform action:
-> /pow 5 2
-Index out of bounds!
-Perform action:
-> /pow 2 5
-Index out of bounds!
-Perform action:
-> /factorial 5
-Index out of bounds!
-Perform action:
-[1;31m
-Start test 7[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 3
-Perform action:
-> /add CakeIsALie
-Element CakeIsALie added
-Perform action:
-> /add CakeIsATruth
-Element CakeIsATruth added
-Perform action:
-> /add CakeIsATruth
-Element CakeIsATruth added
-Perform action:
-> /add CakeIsALie
-Element CakeIsALie added
-Perform action:
-> /remove 5
-Index out of bounds!
-Perform action:
-> /print 5
-Index out of bounds!
-Perform action:
-> /replace 5 tmp
-Index out of bounds!
-Perform action:
-> /equals 5 2
-Index out of bounds!
-Perform action:
-> /compare 5 2
-Index out of bounds!
-Perform action:
-> /equals 2 5
-Index out of bounds!
-Perform action:
-> /compare 2 5
-Index out of bounds!
-Perform action:
-> /concat 5 2
-Index out of bounds!
-Perform action:
-> /concat 2 5
-Index out of bounds!
-Perform action:
-> /swapCase 5
-Index out of bounds!
-Perform action:
-> /upper 5
-Index out of bounds!
-Perform action:
-> /lower 5
-Index out of bounds!
-Perform action:
-> /reverse 5
-Index out of bounds!
-Perform action:
-> /length 5
-Index out of bounds!
-Perform action:
-[1;31m
-Start test 8[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 1
-Perform action:
-> /add true
-Element true added
-Perform action:
-> /add false
-Element false added
-Perform action:
-> /add false
-Element false added
-Perform action:
-> /add true
-Element true added
-Perform action:
-> /remove A
-4Some arguments can't be parsed!0.30578083737770745
-Perform action:
-> /print A
-3Some arguments can't be parsed!0.6395127626655907
-Perform action:
-> /replace A true
-3Some arguments can't be parsed!0.5173376588861948
-Perform action:
-> /equals A B
-2Some arguments can't be parsed!0.410310557032624
-Perform action:
-> /compare A B
-2Some arguments can't be parsed!0.565977585764063
-Perform action:
-
-> /flip A
-3Some arguments can't be parsed!0.5915998655122128
-Perform action:
-> /and A 2
-3Some arguments can't be parsed!0.9932055570708047
-Perform action:
-> /and 2 A
-3Some arguments can't be parsed!0.6795736445898214
-Perform action:
-
-> /or A 2
-4Some arguments can't be parsed!0.48532604061148155
-Perform action:
-
-> /or 2 A
-4Some arguments can't be parsed!0.35588494253798597
-Perform action:
-> /logShift A
-3Some arguments can't be parsed!0.6210977689741094
-Perform action:
-[1;31m
-Start test 9[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 2
-Perform action:
-	> /add 2
-Element 2 added
-Perform action:
-
-> /add -1
-Element -1 added
-Perform action:
-
-> /add -1
-Element -1 added
-Perform action:
-	> /add 2
-Element 2 added
-Perform action:
-> /remove A
-4Some arguments can't be parsed!0.23569681734987757
-Perform action:
-> /print A
-4Some arguments can't be parsed!0.46983007628878193
-Perform action:
-> /replace A 42
-3Some arguments can't be parsed!0.5111605887819305
-Perform action:
-> /equals A B
-3Some arguments can't be parsed!0.7248469961830387
-Perform action:
-> /compare A B
-4Some arguments can't be parsed!0.31883610808540874
-Perform action:
-	> /add A
-3Some arguments can't be parsed!0.8604872261143572
-Perform action:
-> /replace 2 A
-4Some arguments can't be parsed!0.29877664697899975
-Perform action:
-> /replaceAll 2 A
-4Some arguments can't be parsed!0.29478442062001975
-Perform action:
-> /replaceAll A 2
-3Some arguments can't be parsed!0.2606223034521732
-Perform action:
-> /index A
-4Some arguments can't be parsed!0.44831671350565594
-Perform action:
-> /count A
-3Some arguments can't be parsed!0.6095217535194001
-Perform action:
-> /sum 2 A
-3Some arguments can't be parsed!0.9641842988751591
-Perform action:
-> /sum A 2
-3Some arguments can't be parsed!0.1466046276763796
-Perform action:
-> /subtract 2 A
-3Some arguments can't be parsed!0.8245513035642592
-Perform action:
-> /subtract A 2
-3Some arguments can't be parsed!0.6827515778116265
-Perform action:
-> /multiply 2 A
-4Some arguments can't be parsed!0.12368336627269982
-Perform action:
-> /multiply A 2
-4Some arguments can't be parsed!0.18137428562592894
-Perform action:
-> /divide 2 A
-4Some arguments can't be parsed!0.37205428348051384
-Perform action:
-> /divide A 2
-3Some arguments can't be parsed!0.6697721067813033
-Perform action:
-> /pow 2 A
-2Some arguments can't be parsed!0.275145948312164
-Perform action:
-> /pow A 2
-4Some arguments can't be parsed!0.17644184792891648
-Perform action:
-> /factorial A
-4Some arguments can't be parsed!0.39640463420812866
-Perform action:
-[1;31m
-Start test 10[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 3
-Perform action:
-> /add CakeIsALie
-Element CakeIsALie added
-Perform action:
-> /add CakeIsATruth
-Element CakeIsATruth added
-Perform action:
-> /add CakeIsATruth
-Element CakeIsATruth added
-Perform action:
-> /add CakeIsALie
-Element CakeIsALie added
-Perform action:
-> /remove A
-3Some arguments can't be parsed!0.4136812113918289
-Perform action:
-> /print A
-4Some arguments can't be parsed!0.24695334411998926
-Perform action:
-> /replace A tmp
-3Some arguments can't be parsed!0.7342637450359625
-Perform action:
-> /equals A B
-3Some arguments can't be parsed!0.4937273375320046
-Perform action:
-> /compare A B
-3Some arguments can't be parsed!0.1543171839365166
-Perform action:
-> /concat 2 A
-3Some arguments can't be parsed!0.8194544031872392
-Perform action:
-> /concat A 2
-3Some arguments can't be parsed!0.5113825666272753
-Perform action:
-> /swapCase A
-3Some arguments can't be parsed!0.7572275549032461
-Perform action:
-> /upper A
-4Some arguments can't be parsed!0.37965832757662754
-Perform action:
-> /lower A
-3Some arguments can't be parsed!0.6423215195172333
-Perform action:
-> /reverse A
-3Some arguments can't be parsed!0.4094668499066929
-Perform action:
-> /length A
-3Some arguments can't be parsed!0.8355211852607775
-Perform action:
-[1;31m
-Start test 11[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 1
-Perform action:
-> /getRandom
-!There are no elements memorized
-Perform action:
-[1;31m
-Start test 12[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 2
-Perform action:
-> /getRandom
-!There are no elements memorized
-Perform action:
-[1;31m
-Start test 13[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 3
-Perform action:
-> /getRandom
-!There are no elements memorized
-Perform action:
-[1;31m
-Start test 14[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 2
-Perform action:
-	> /add 1
-Element 1 added
-Perform action:
-	> /add 0
-Element 0 added
-Perform action:
-> /divide 0 1
-Division by zero
-Perform action:
-[1;31m
-Start test 15[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 1
-Perform action:
-> /add true
-Element true added
-Perform action:
-> /add false
-Element false added
-Perform action:
-> /add false
-Element false added
-Perform action:
-> /add true
-Element true added
-Perform action:
-> /readFile notfound.txt
-File not found!
-Perform action:
-[1;31m
-Start test 16[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 2
-Perform action:
-	> /add 2
-Element 2 added
-Perform action:
-
-> /add -1
-Element -1 added
-Perform action:
-
-> /add -1
-Element -1 added
-Perform action:
-	> /add 2
-Element 2 added
-Perform action:
-> /readFile notfound.txt
-File not found!
-Perform action:
-[1;31m
-Start test 17[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 3
-Perform action:
-> /add CakeIsALie
-Element CakeIsALie added
-Perform action:
-> /add CakeIsATruth
-Element CakeIsATruth added
-Perform action:
-> /add CakeIsATruth
-Element CakeIsATruth added
-Perform action:
-> /add CakeIsALie
-Element CakeIsALie added
-Perform action:
-> /readFile notfound.txt
-File not found!
-Perform action:
-[1;31m
-Start test 18[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 3
-Perform action:
-> /regex ())
-"Incorrect regex pattern provided
-Perform action:
-[1;31m
-Start test 19[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 1
-Perform action:
-> /add true
-Element true added
-Perform action:
-> /add true
-Element true added
-Perform action:
-> /add true
-Element true added
-Perform action:
-> /add true
-Element true added
-Perform action:
-> /index false
-There is no such element
-Perform action:
-> /sort up
-?Incorrect argument, possible arguments: ascending, descending
-Perform action:
-> /printAll somehow
-EIncorrect argument, possible arguments: asList, lineByLine, oneLine
-Perform action:
-[1;31m
-Start test 20[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 2
-Perform action:
-	> /add 1
-Element 1 added
-Perform action:
-	> /add 1
-Element 1 added
-Perform action:
-	> /add 1
-Element 1 added
-Perform action:
-	> /add 1
-Element 1 added
-Perform action:
-> /index 42
-There is no such element
-Perform action:
-> /sort up
-?Incorrect argument, possible arguments: ascending, descending
-Perform action:
-> /printAll somehow
-EIncorrect argument, possible arguments: asList, lineByLine, oneLine
-Perform action:
-[1;31m
-Start test 21[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 3
-Perform action:
-> /add CakeIsALie
-Element CakeIsALie added
-Perform action:
-> /add CakeIsALie
-Element CakeIsALie added
-Perform action:
-> /add CakeIsALie
-Element CakeIsALie added
-Perform action:
-> /add CakeIsALie
-Element CakeIsALie added
-Perform action:
-> /index CakeIsATruth
-There is no such element
-Perform action:
-> /sort up
-?Incorrect argument, possible arguments: ascending, descending
-Perform action:
-> /printAll somehow
-EIncorrect argument, possible arguments: asList, lineByLine, oneLine
-Perform action:
-[1;31m
-Start test 22[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 1
-Perform action:
-> /frequency
-There are no elements
-Perform action:
-[1;31m
-Start test 23[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 2
-Perform action:
-> /frequency
-There are no elements
-Perform action:
-[1;31m
-Start test 24[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 3
-Perform action:
-> /frequency
-There are no elements
-Perform action:
-[1;31m
-Start test 25[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 1
-Perform action:
-> /convertTo number
-No data memorized
-Perform action:
-	> /morse
-No data memorized
-Perform action:
-> /add true
-Element true added
-Perform action:
-> /add false
-Element false added
-Perform action:
-> /add notTrue
-3Some arguments can't be parsed!0.7139629088772949
-Perform action:
-> /convertTo something
-8Incorrect argument, possible arguments: string, number
-Perform action:
-[1;31m
-Start test 26[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 3
-Perform action:
-> /regex .+
-0There are no strings that match provided regex
-Perform action:
-> /add apple
-Element apple added
-Perform action:
-> /add grape
-Element grape added
-Perform action:
-> /regex $.^
-0There are no strings that match provided regex
-Perform action:
-[1;31m
-Start test 27[0m
-Welcome to Data Memory!
-Possible actions:
-1. Memorize booleans
-2. Memorize numbers
-3. Memorize words
-	0. Quit
-> 2
-Perform action:
-
-> /add -1
-Element -1 added
-Perform action:
-> /factorial 0
-'Calculation performed: -1! = undefined
-Perform action:
+> 0
 [1;31m
-Start test 1 (28)[0m
+Start test 1 (2)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -882,7 +152,7 @@
 	0. Quit
 > 0
 [1;31m
-Start test 2 (29)[0m
+Start test 2 (3)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -892,7 +162,7 @@
 > 1
 Perform action:
 [1;31m
-Start test 3 (30)[0m
+Start test 3 (4)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -902,7 +172,7 @@
 > 2
 Perform action:
 [1;31m
-Start test 4 (31)[0m
+Start test 4 (5)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -912,7 +182,7 @@
 > 3
 Perform action:
 [1;31m
-Start test 5 (32)[0m
+Start test 5 (6)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1055,7 +325,7 @@
 	0. Quit
 > 0
 [1;31m
-Start test 6 (33)[0m
+Start test 6 (7)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1201,7 +471,7 @@
 	0. Quit
 > 0
 [1;31m
-Start test 7 (34)[0m
+Start test 7 (8)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1348,7 +618,7 @@
 	0. Quit
 > 0
 [1;31m
-Start test 8 (35)[0m
+Start test 8 (9)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1559,7 +829,7 @@
 	0. Quit
 > 0
 [1;31m
-Start test 9 (36)[0m
+Start test 9 (10)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1771,7 +1041,7 @@
 	0. Quit
 > 0
 [1;31m
-Start test 10 (37)[0m
+Start test 10 (11)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -1983,7 +1253,7 @@
 	0. Quit
 > 0
 [1;31m
-Start test 11 (38)[0m
+Start test 11 (12)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2021,7 +1291,7 @@
 true false false true
 Perform action:
 [1;31m
-Start test 12 (39)[0m
+Start test 12 (13)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2061,7 +1331,7 @@
 2 -1 -1 2
 Perform action:
 [1;31m
-Start test 13 (40)[0m
+Start test 13 (14)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2099,7 +1369,7 @@
 1CakeIsALie CakeIsATruth CakeIsATruth CakeIsALie
 Perform action:
 [1;31m
-Start test 14 (41)[0m
+Start test 14 (15)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2133,7 +1403,7 @@
 Element on 3 position is true
 Perform action:
 [1;31m
-Start test 15 (42)[0m
+Start test 15 (16)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2169,7 +1439,7 @@
 Element on 3 position is 2
 Perform action:
 [1;31m
-Start test 16 (43)[0m
+Start test 16 (17)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2203,7 +1473,7 @@
 %Element on 3 position is CakeIsALie
 Perform action:
 [1;31m
-Start test 17 (44)[0m
+Start test 17 (18)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2253,7 +1523,7 @@
 
 Perform action:
 [1;31m
-Start test 18 (45)[0m
+Start test 18 (19)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2305,7 +1575,7 @@
 
 Perform action:
 [1;31m
-Start test 19 (46)[0m
+Start test 19 (20)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2355,7 +1625,7 @@
 
 Perform action:
 [1;31m
-Start test 20 (47)[0m
+Start test 20 (21)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2405,7 +1675,7 @@
 false false false false
 Perform action:
 [1;31m
-Start test 21 (48)[0m
+Start test 21 (22)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2457,7 +1727,7 @@
 42 42 42 42
 Perform action:
 [1;31m
-Start test 22 (49)[0m
+Start test 22 (23)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2507,7 +1777,7 @@
 tmp tmp tmp tmp
 Perform action:
 [1;31m
-Start test 23 (50)[0m
+Start test 23 (24)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2536,7 +1806,7 @@
 false false false false
 Perform action:
 [1;31m
-Start test 24 (51)[0m
+Start test 24 (25)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2567,7 +1837,7 @@
 42 -1 -1 42
 Perform action:
 [1;31m
-Start test 25 (52)[0m
+Start test 25 (26)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2596,7 +1866,7 @@
 #tmp CakeIsATruth CakeIsATruth tmp
 Perform action:
 [1;31m
-Start test 26 (53)[0m
+Start test 26 (27)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2630,7 +1900,7 @@
 +First occurrence of true is on 0 position
 Perform action:
 [1;31m
-Start test 27 (54)[0m
+Start test 27 (28)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2666,7 +1936,7 @@
 (First occurrence of 2 is on 0 position
 Perform action:
 [1;31m
-Start test 28 (55)[0m
+Start test 28 (29)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2700,7 +1970,7 @@
 1First occurrence of CakeIsALie is on 0 position
 Perform action:
 [1;31m
-Start test 29 (56)[0m
+Start test 29 (30)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2729,7 +1999,7 @@
 false false true true
 Perform action:
 [1;31m
-Start test 30 (57)[0m
+Start test 30 (31)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2760,7 +2030,7 @@
 -1 -1 2 2
 Perform action:
 [1;31m
-Start test 31 (58)[0m
+Start test 31 (32)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2789,7 +2059,7 @@
 1CakeIsALie CakeIsALie CakeIsATruth CakeIsATruth
 Perform action:
 [1;31m
-Start test 32 (59)[0m
+Start test 32 (33)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2817,7 +2087,7 @@ false: 2
 	true: 2
 Perform action:
 [1;31m
-Start test 33 (60)[0m
+Start test 33 (34)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2846,7 +2116,7 @@ false: 2
 2: 2
 Perform action:
 [1;31m
-Start test 34 (61)[0m
+Start test 34 (35)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2873,7 +2143,7 @@ false: 2
 CakeIsALie: 2
 Perform action:
 [1;31m
-Start test 35 (62)[0m
+Start test 35 (36)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2907,7 +2177,7 @@ false: 2
 Amount of true: 2
 Perform action:
 [1;31m
-Start test 36 (63)[0m
+Start test 36 (37)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2943,7 +2213,7 @@ false: 2
 Amount of 2: 2
 Perform action:
 [1;31m
-Start test 37 (64)[0m
+Start test 37 (38)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -2977,7 +2247,7 @@ false: 2
 Amount of CakeIsALie: 2
 Perform action:
 [1;31m
-Start test 38 (65)[0m
+Start test 38 (39)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3002,7 +2272,7 @@ false: 2
 Amount of elements: 4
 Perform action:
 [1;31m
-Start test 39 (66)[0m
+Start test 39 (40)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3029,7 +2299,7 @@ false: 2
 Amount of elements: 4
 Perform action:
 [1;31m
-Start test 40 (67)[0m
+Start test 40 (41)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3054,7 +2324,7 @@ false: 2
 Amount of elements: 4
 Perform action:
 [1;31m
-Start test 41 (68)[0m
+Start test 41 (42)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3124,7 +2394,7 @@ false: 2
 (3 and 3 elements are equal: true = true
 Perform action:
 [1;31m
-Start test 42 (69)[0m
+Start test 42 (43)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3196,7 +2466,7 @@ false: 2
 "3 and 3 elements are equal: 2 = 2
 Perform action:
 [1;31m
-Start test 43 (70)[0m
+Start test 43 (44)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3266,7 +2536,7 @@ false: 2
 43 and 3 elements are equal: CakeIsALie = CakeIsALie
 Perform action:
 [1;31m
-Start test 44 (71)[0m
+Start test 44 (45)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3295,7 +2565,7 @@ false: 2
 
 Perform action:
 [1;31m
-Start test 45 (72)[0m
+Start test 45 (46)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3326,7 +2596,7 @@ false: 2
 
 Perform action:
 [1;31m
-Start test 46 (73)[0m
+Start test 46 (47)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3355,7 +2625,7 @@ false: 2
 
 Perform action:
 [1;31m
-Start test 47 (74)[0m
+Start test 47 (48)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3425,7 +2695,7 @@ false: 2
 Result: true = true
 Perform action:
 [1;31m
-Start test 48 (75)[0m
+Start test 48 (49)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3497,7 +2767,7 @@ false: 2
 Result: 2 = 2
 Perform action:
 [1;31m
-Start test 49 (76)[0m
+Start test 49 (50)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3567,7 +2837,7 @@ false: 2
 !Result: CakeIsALie = CakeIsALie
 Perform action:
 [1;31m
-Start test 50 (77)[0m
+Start test 50 (51)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3597,7 +2867,7 @@ false: 2
 true false false true
 Perform action:
 [1;31m
-Start test 51 (78)[0m
+Start test 51 (52)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3629,7 +2899,7 @@ false: 2
 2 -1 -1 2
 Perform action:
 [1;31m
-Start test 52 (79)[0m
+Start test 52 (53)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3659,7 +2929,7 @@ false: 2
 1CakeIsALie CakeIsATruth CakeIsATruth CakeIsALie
 Perform action:
 [1;31m
-Start test 53 (80)[0m
+Start test 53 (54)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3685,7 +2955,7 @@ false: 2
 Unique values: [false, true]
 Perform action:
 [1;31m
-Start test 54 (81)[0m
+Start test 54 (55)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3713,7 +2983,7 @@ false: 2
 Unique values: [-1, 2]
 Perform action:
 [1;31m
-Start test 55 (82)[0m
+Start test 55 (56)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3739,7 +3009,7 @@ false: 2
 +Unique values: [CakeIsATruth, CakeIsALie]
 Perform action:
 [1;31m
-Start test 56 (83)[0m
+Start test 56 (57)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3756,7 +3026,7 @@ false: 2
 true true true
 Perform action:
 [1;31m
-Start test 57 (84)[0m
+Start test 57 (58)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3773,7 +3043,7 @@ false: 2
 "2147483647 2147483647 2147483647
 Perform action:
 [1;31m
-Start test 58 (85)[0m
+Start test 58 (59)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3790,7 +3060,7 @@ false: 2
 "CakeIsALie CakeIsALie CakeIsALie
 Perform action:
 [1;31m
-Start test 59 (86)[0m
+Start test 59 (60)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3825,7 +3095,7 @@ false: 2
 true false false true
 Perform action:
 [1;31m
-Start test 60 (87)[0m
+Start test 60 (61)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3862,7 +3132,7 @@ false: 2
 2 -1 -1 2
 Perform action:
 [1;31m
-Start test 61 (88)[0m
+Start test 61 (62)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3897,7 +3167,7 @@ false: 2
 1CakeIsALie CakeIsATruth CakeIsATruth CakeIsALie
 Perform action:
 [1;31m
-Start test 62 (89)[0m
+Start test 62 (63)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3938,7 +3208,7 @@ false: 2
 Average of all elements: 3
 Perform action:
 [1;31m
-Start test 63 (90)[0m
+Start test 63 (64)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -3986,7 +3256,7 @@ false: 2
 [world!]
 Perform action:
 [1;31m
-Start test 64 (91)[0m
+Start test 64 (65)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4065,7 +3335,7 @@ false: 2
 Morse code: __._....
 Perform action:
 [1;31m
-Start test 1 (92)[0m
+Start test 1 (66)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4090,7 +3360,7 @@ false: 2
 Random element: false
 Perform action:
 [1;31m
-Start test 2 (93)[0m
+Start test 2 (67)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4118,7 +3388,7 @@ false: 2
 Random element: false
 Perform action:
 [1;31m
-Start test 3 (94)[0m
+Start test 3 (68)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4140,6 +3410,9 @@ false: 2
 Element false added
 Perform action:
 > /getRandom
+Random element: false
+Perform action:
+> /getRandom
 Random element: true
 Perform action:
 > /getRandom
@@ -4152,7 +3425,7 @@ false: 2
 Random element: false
 Perform action:
 [1;31m
-Start test 4 (95)[0m
+Start test 4 (69)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4171,13 +3444,10 @@ false: 2
 Random element: 1
 Perform action:
 > /getRandom
-Random element: 1
-Perform action:
-> /getRandom
 Random element: 2
 Perform action:
 [1;31m
-Start test 5 (96)[0m
+Start test 5 (70)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4199,10 +3469,13 @@ false: 2
 Random element: 4
 Perform action:
 > /getRandom
-Random element: 5
+Random element: 4
 Perform action:
 > /getRandom
-Random element: 5
+Random element: 3
+Perform action:
+> /getRandom
+Random element: 4
 Perform action:
 > /getRandom
 Random element: 4
@@ -4211,16 +3484,25 @@ false: 2
 Random element: 5
 Perform action:
 > /getRandom
+Random element: 5
+Perform action:
+> /getRandom
 Random element: 3
 Perform action:
 > /getRandom
 Random element: 3
+Perform action:
+> /getRandom
+Random element: 3
+Perform action:
+> /getRandom
+Random element: 5
 Perform action:
 > /getRandom
 Random element: 4
 Perform action:
 [1;31m
-Start test 6 (97)[0m
+Start test 6 (71)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4242,37 +3524,19 @@ false: 2
 Element 9 added
 Perform action:
 > /getRandom
-Random element: 9
-Perform action:
-> /getRandom
 Random element: 6
 Perform action:
 > /getRandom
 Random element: 9
 Perform action:
 > /getRandom
-Random element: 9
+Random element: 7
 Perform action:
 > /getRandom
 Random element: 6
 Perform action:
 > /getRandom
 Random element: 6
-Perform action:
-> /getRandom
-Random element: 6
-Perform action:
-> /getRandom
-Random element: 7
-Perform action:
-> /getRandom
-Random element: 7
-Perform action:
-> /getRandom
-Random element: 8
-Perform action:
-> /getRandom
-Random element: 7
 Perform action:
 > /getRandom
 Random element: 9
@@ -4281,10 +3545,10 @@ false: 2
 Random element: 8
 Perform action:
 > /getRandom
-Random element: 8
+Random element: 9
 Perform action:
 > /getRandom
-Random element: 7
+Random element: 9
 Perform action:
 > /getRandom
 Random element: 6
@@ -4293,7 +3557,7 @@ false: 2
 Random element: 9
 Perform action:
 [1;31m
-Start test 7 (98)[0m
+Start test 7 (72)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4309,6 +3573,42 @@ false: 2
 Element World added
 Perform action:
 > /getRandom
+Random element: World
+Perform action:
+> /getRandom
+Random element: World
+Perform action:
+> /getRandom
+Random element: World
+Perform action:
+> /getRandom
+Random element: Hello
+Perform action:
+> /getRandom
+Random element: Hello
+Perform action:
+> /getRandom
+Random element: Hello
+Perform action:
+> /getRandom
+Random element: Hello
+Perform action:
+> /getRandom
+Random element: Hello
+Perform action:
+> /getRandom
+Random element: Hello
+Perform action:
+> /getRandom
+Random element: Hello
+Perform action:
+> /getRandom
+Random element: Hello
+Perform action:
+> /getRandom
+Random element: Hello
+Perform action:
+> /getRandom
 Random element: Hello
 Perform action:
 > /getRandom
@@ -4318,7 +3618,7 @@ false: 2
 Random element: World
 Perform action:
 [1;31m
-Start test 8 (99)[0m
+Start test 8 (73)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4343,13 +3643,10 @@ false: 2
 Random element: The
 Perform action:
 > /getRandom
-Random element: Around
-Perform action:
-> /getRandom
 Random element: world
 Perform action:
 [1;31m
-Start test 9 (100)[0m
+Start test 9 (74)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4371,51 +3668,6 @@ false: 2
 Element Words added
 Perform action:
 > /getRandom
-Random element: interesting
-Perform action:
-> /getRandom
-Random element: Four
-Perform action:
-> /getRandom
-Random element: interesting
-Perform action:
-> /getRandom
-Random element: Words
-Perform action:
-> /getRandom
-Random element: interesting
-Perform action:
-> /getRandom
-Random element: Very
-Perform action:
-> /getRandom
-Random element: Four
-Perform action:
-> /getRandom
-Random element: Four
-Perform action:
-> /getRandom
-Random element: Four
-Perform action:
-> /getRandom
-Random element: Words
-Perform action:
-> /getRandom
-Random element: Four
-Perform action:
-> /getRandom
-Random element: Very
-Perform action:
-> /getRandom
-Random element: Four
-Perform action:
-> /getRandom
-Random element: Very
-Perform action:
-> /getRandom
-Random element: Very
-Perform action:
-> /getRandom
 Random element: Words
 Perform action:
 > /getRandom
@@ -4423,12 +3675,27 @@ false: 2
 Perform action:
 > /getRandom
 Random element: Four
+Perform action:
+> /getRandom
+Random element: Four
+Perform action:
+> /getRandom
+Random element: Very
+Perform action:
+> /getRandom
+Random element: Very
+Perform action:
+> /getRandom
+Random element: interesting
+Perform action:
+> /getRandom
+Random element: interesting
 Perform action:
 > /getRandom
 Random element: Words
 Perform action:
 [1;31m
-Start test 10 (101)[0m
+Start test 10 (75)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4450,7 +3717,7 @@ false: 2
 Data imported: 2
 Perform action:
 [1;31m
-Start test 11 (102)[0m
+Start test 11 (76)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4475,7 +3742,7 @@ false: 2
 Data imported: 2
 Perform action:
 [1;31m
-Start test 12 (103)[0m
+Start test 12 (77)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4503,7 +3770,7 @@ false: 2
 Data imported: 2
 Perform action:
 [1;31m
-Start test 13 (104)[0m
+Start test 13 (78)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4525,7 +3792,7 @@ false: 2
 Data imported: 2
 Perform action:
 [1;31m
-Start test 14 (105)[0m
+Start test 14 (79)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4550,7 +3817,7 @@ false: 2
 Data imported: 2
 Perform action:
 [1;31m
-Start test 15 (106)[0m
+Start test 15 (80)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4578,7 +3845,7 @@ false: 2
 Data imported: 2
 Perform action:
 [1;31m
-Start test 16 (107)[0m
+Start test 16 (81)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4600,7 +3867,7 @@ false: 2
 Data imported: 2
 Perform action:
 [1;31m
-Start test 17 (108)[0m
+Start test 17 (82)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4625,7 +3892,7 @@ false: 2
 Data imported: 2
 Perform action:
 [1;31m
-Start test 18 (109)[0m
+Start test 18 (83)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4653,7 +3920,7 @@ false: 2
 Data imported: 2
 Perform action:
 [1;31m
-Start test 19 (110)[0m
+Start test 19 (84)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4677,7 +3944,7 @@ false: 2
 [false, true]
 Perform action:
 [1;31m
-Start test 20 (111)[0m
+Start test 20 (85)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4704,7 +3971,7 @@ false: 2
 [false, false, false]
 Perform action:
 [1;31m
-Start test 21 (112)[0m
+Start test 21 (86)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4734,7 +4001,7 @@ false: 2
 [false, true, false, true]
 Perform action:
 [1;31m
-Start test 22 (113)[0m
+Start test 22 (87)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4758,7 +4025,7 @@ false: 2
 [2, 1]
 Perform action:
 [1;31m
-Start test 23 (114)[0m
+Start test 23 (88)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4785,7 +4052,7 @@ false: 2
 [4, 3, 5]
 Perform action:
 [1;31m
-Start test 24 (115)[0m
+Start test 24 (89)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4815,7 +4082,7 @@ false: 2
 [9, 6, 8, 7]
 Perform action:
 [1;31m
-Start test 25 (116)[0m
+Start test 25 (90)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4839,7 +4106,7 @@ false: 2
 [World, Hello]
 Perform action:
 [1;31m
-Start test 26 (117)[0m
+Start test 26 (91)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4866,7 +4133,7 @@ false: 2
 [world, The, Around]
 Perform action:
 [1;31m
-Start test 27 (118)[0m
+Start test 27 (92)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4896,7 +4163,7 @@ false: 2
 "[Words, interesting, Very, Four]
 Perform action:
 [1;31m
-Start test 28 (119)[0m
+Start test 28 (93)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4926,7 +4193,7 @@ false: 2
 [true, false]
 Perform action:
 [1;31m
-Start test 29 (120)[0m
+Start test 29 (94)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4959,7 +4226,7 @@ false: 2
 [false, false, false]
 Perform action:
 [1;31m
-Start test 30 (121)[0m
+Start test 30 (95)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -4995,7 +4262,7 @@ false: 2
 [true, true, false, false]
 Perform action:
 [1;31m
-Start test 31 (122)[0m
+Start test 31 (96)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -5025,7 +4292,7 @@ false: 2
 [2, 1]
 Perform action:
 [1;31m
-Start test 32 (123)[0m
+Start test 32 (97)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -5058,7 +4325,7 @@ false: 2
 [5, 4, 3]
 Perform action:
 [1;31m
-Start test 33 (124)[0m
+Start test 33 (98)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -5094,7 +4361,7 @@ false: 2
 [9, 8, 7, 6]
 Perform action:
 [1;31m
-Start test 34 (125)[0m
+Start test 34 (99)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -5124,7 +4391,7 @@ false: 2
 [World, Hello]
 Perform action:
 [1;31m
-Start test 35 (126)[0m
+Start test 35 (100)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -5157,7 +4424,7 @@ false: 2
 [world, The, Around]
 Perform action:
 [1;31m
-Start test 36 (127)[0m
+Start test 36 (101)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -5193,7 +4460,7 @@ false: 2
 "[interesting, Words, Very, Four]
 Perform action:
 [1;31m
-Start test 37 (128)[0m
+Start test 37 (102)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -5731,7 +4998,7 @@ false: 2
 Element on 7 position is true
 Perform action:
 [1;31m
-Start test 38 (129)[0m
+Start test 38 (103)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -6541,7 +5808,7 @@ false: 2
 Element on 9 position is true
 Perform action:
 [1;31m
-Start test 39 (130)[0m
+Start test 39 (104)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -7633,7 +6900,7 @@ false: 2
  Element on 11 position is true
 Perform action:
 [1;31m
-Start test 40 (131)[0m
+Start test 40 (105)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -7737,7 +7004,7 @@ false: 2
 6[false, false, true, true, false, true, false, true]
 Perform action:
 [1;31m
-Start test 41 (132)[0m
+Start test 41 (106)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -7847,7 +7114,7 @@ false: 2
 B[false, true, true, false, false, true, true, true, false, true]
 Perform action:
 [1;31m
-Start test 42 (133)[0m
+Start test 42 (107)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -7963,7 +7230,7 @@ false: 2
 P[true, true, true, false, true, false, true, true, false, false, false, false]
 Perform action:
 [1;31m
-Start test 43 (134)[0m
+Start test 43 (108)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -7996,7 +7263,7 @@ false: 2
 )"ipsuM" string with swapped case: IPSUm
 Perform action:
 [1;31m
-Start test 44 (135)[0m
+Start test 44 (109)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -8035,7 +7302,7 @@ false: 2
 '"AMet" string with swapped case: amET
 Perform action:
 [1;31m
-Start test 45 (136)[0m
+Start test 45 (110)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -8080,7 +7347,7 @@ false: 2
 %"sed" string with swapped case: SED
 Perform action:
 [1;31m
-Start test 46 (137)[0m
+Start test 46 (111)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -8105,7 +7372,7 @@ false: 2
 Average of all elements: 3
 Perform action:
 [1;31m
-Start test 47 (138)[0m
+Start test 47 (112)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -8136,7 +7403,7 @@ false: 2
 Average of all elements: 4
 Perform action:
 [1;31m
-Start test 48 (139)[0m
+Start test 48 (113)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -8173,7 +7440,7 @@ false: 2
 Average of all elements: 1
 Perform action:
 [1;31m
-Start test 49 (140)[0m
+Start test 49 (114)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -8205,7 +7472,7 @@ false: 2
 $Average of all elements: 2147483647
 Perform action:
 [1;31m
-Start test 50 (141)[0m
+Start test 50 (115)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -8237,7 +7504,7 @@ false: 2
 %Average of all elements: -2147483647
 Perform action:
 [1;31m
-Start test 51 (142)[0m
+Start test 51 (116)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -8269,7 +7536,7 @@ false: 2
 Average of all elements: 0
 Perform action:
 [1;31m
-Start test 52 (143)[0m
+Start test 52 (117)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -8301,7 +7568,7 @@ false: 2
 Average of all elements: 0
 Perform action:
 [1;31m
-Start test 53 (144)[0m
+Start test 53 (118)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -8321,7 +7588,7 @@ false: 2
 4Calculation performed: 9 ^ 19 = 1350851717672992089
 Perform action:
 [1;31m
-Start test 54 (145)[0m
+Start test 54 (119)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -8340,7 +7607,7 @@ false: 2
 .Calculation performed: 6 / 1000000 = 0.000006
 Perform action:
 [1;31m
-Start test 55 (146)[0m
+Start test 55 (120)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -8359,7 +7626,7 @@ false: 2
 4Calculation performed: 1000001 / 1000000 = 1.000001
 Perform action:
 [1;31m
-Start test 56 (147)[0m
+Start test 56 (121)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -8379,7 +7646,7 @@ false: 2
 )Calculation performed: 8 ^ -2 = 0.015625
 Perform action:
 [1;31m
-Start test 57 (148)[0m
+Start test 57 (122)[0m
 Welcome to Data Memory!
 Possible actions:
 1. Memorize booleans
@@ -8403,3 +7670,877 @@ false: 2
 > /average
 Average of all elements: 1.25
 Perform action:
+[1;31m
+Start test 1 (123)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 4
+Incorrect command
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+
+> integer
+Incorrect command
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> -2
+Incorrect command
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+[1;31m
+Start test 2 (124)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> hey?
+No such command!
+Perform action:
+	> /smile
+No such command!
+Perform action:
+> /draw line
+No such command!
+Perform action:
+> add true
+No such command!
+Perform action:
+> /add
+Incorrect amount of arguments
+Perform action:
+> /compare 2
+Incorrect amount of arguments
+Perform action:
+[1;31m
+Start test 3 (125)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+> hey?
+No such command!
+Perform action:
+	> /smile
+No such command!
+Perform action:
+> /draw line
+No such command!
+Perform action:
+	> add 42
+No such command!
+Perform action:
+> /add
+Incorrect amount of arguments
+Perform action:
+> /compare 2
+Incorrect amount of arguments
+Perform action:
+[1;31m
+Start test 4 (126)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> hey?
+No such command!
+Perform action:
+	> /smile
+No such command!
+Perform action:
+> /draw line
+No such command!
+Perform action:
+
+> add tmp
+No such command!
+Perform action:
+> /add
+Incorrect amount of arguments
+Perform action:
+> /compare 2
+Incorrect amount of arguments
+Perform action:
+[1;31m
+Start test 5 (127)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element true added
+Perform action:
+> /add false
+Element false added
+Perform action:
+> /add false
+Element false added
+Perform action:
+> /add true
+Element true added
+Perform action:
+> /remove 5
+Index out of bounds!
+Perform action:
+> /print 5
+Index out of bounds!
+Perform action:
+> /replace 5 true
+Index out of bounds!
+Perform action:
+> /equals 5 2
+Index out of bounds!
+Perform action:
+> /compare 5 2
+Index out of bounds!
+Perform action:
+> /equals 2 5
+Index out of bounds!
+Perform action:
+> /compare 2 5
+Index out of bounds!
+Perform action:
+
+> /flip 5
+Index out of bounds!
+Perform action:
+> /and 5 2
+Index out of bounds!
+Perform action:
+> /and 2 5
+Index out of bounds!
+Perform action:
+
+> /or 5 2
+Index out of bounds!
+Perform action:
+
+> /or 2 5
+Index out of bounds!
+Perform action:
+[1;31m
+Start test 6 (128)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /remove 5
+Index out of bounds!
+Perform action:
+> /print 5
+Index out of bounds!
+Perform action:
+> /replace 5 42
+Index out of bounds!
+Perform action:
+> /equals 5 2
+Index out of bounds!
+Perform action:
+> /compare 5 2
+Index out of bounds!
+Perform action:
+> /equals 2 5
+Index out of bounds!
+Perform action:
+> /compare 2 5
+Index out of bounds!
+Perform action:
+> /sum 5 2
+Index out of bounds!
+Perform action:
+> /sum 2 5
+Index out of bounds!
+Perform action:
+> /subtract 5 2
+Index out of bounds!
+Perform action:
+> /subtract 2 5
+Index out of bounds!
+Perform action:
+> /multiply 5 2
+Index out of bounds!
+Perform action:
+> /multiply 2 5
+Index out of bounds!
+Perform action:
+> /divide 5 2
+Index out of bounds!
+Perform action:
+> /divide 2 5
+Index out of bounds!
+Perform action:
+> /pow 5 2
+Index out of bounds!
+Perform action:
+> /pow 2 5
+Index out of bounds!
+Perform action:
+> /factorial 5
+Index out of bounds!
+Perform action:
+[1;31m
+Start test 7 (129)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /remove 5
+Index out of bounds!
+Perform action:
+> /print 5
+Index out of bounds!
+Perform action:
+> /replace 5 tmp
+Index out of bounds!
+Perform action:
+> /equals 5 2
+Index out of bounds!
+Perform action:
+> /compare 5 2
+Index out of bounds!
+Perform action:
+> /equals 2 5
+Index out of bounds!
+Perform action:
+> /compare 2 5
+Index out of bounds!
+Perform action:
+> /concat 5 2
+Index out of bounds!
+Perform action:
+> /concat 2 5
+Index out of bounds!
+Perform action:
+> /swapCase 5
+Index out of bounds!
+Perform action:
+> /upper 5
+Index out of bounds!
+Perform action:
+> /lower 5
+Index out of bounds!
+Perform action:
+> /reverse 5
+Index out of bounds!
+Perform action:
+> /length 5
+Index out of bounds!
+Perform action:
+[1;31m
+Start test 8 (130)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element true added
+Perform action:
+> /add false
+Element false added
+Perform action:
+> /add false
+Element false added
+Perform action:
+> /add true
+Element true added
+Perform action:
+> /remove A
+2Some arguments can't be parsed!0.827261490134096
+Perform action:
+> /print A
+3Some arguments can't be parsed!0.3707416955698767
+Perform action:
+> /replace A true
+4Some arguments can't be parsed!0.18623864242850896
+Perform action:
+> /equals A B
+4Some arguments can't be parsed!0.36605239808002277
+Perform action:
+> /compare A B
+2Some arguments can't be parsed!0.485423496901477
+Perform action:
+
+> /flip A
+3Some arguments can't be parsed!0.7712060912001989
+Perform action:
+> /and A 2
+3Some arguments can't be parsed!0.5797382935112034
+Perform action:
+> /and 2 A
+3Some arguments can't be parsed!0.1155531899693667
+Perform action:
+
+> /or A 2
+3Some arguments can't be parsed!0.8879602328252336
+Perform action:
+
+> /or 2 A
+3Some arguments can't be parsed!0.6272235107383728
+Perform action:
+> /logShift A
+3Some arguments can't be parsed!0.4165944715290941
+Perform action:
+[1;31m
+Start test 9 (131)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /remove A
+3Some arguments can't be parsed!0.7901943745918729
+Perform action:
+> /print A
+3Some arguments can't be parsed!0.5788798367046016
+Perform action:
+> /replace A 42
+4Some arguments can't be parsed!0.39878493633984113
+Perform action:
+> /equals A B
+3Some arguments can't be parsed!0.8734388397710743
+Perform action:
+> /compare A B
+3Some arguments can't be parsed!0.5328244621923579
+Perform action:
+	> /add A
+2Some arguments can't be parsed!0.877361122109655
+Perform action:
+> /replace 2 A
+3Some arguments can't be parsed!0.9672454163776696
+Perform action:
+> /replaceAll 2 A
+4Some arguments can't be parsed!0.20085110489987712
+Perform action:
+> /replaceAll A 2
+4Some arguments can't be parsed!0.11822062099766872
+Perform action:
+> /index A
+5Some arguments can't be parsed!0.049856223039899894
+Perform action:
+> /count A
+3Some arguments can't be parsed!0.7268893376405284
+Perform action:
+> /sum 2 A
+3Some arguments can't be parsed!0.6823332096238407
+Perform action:
+> /sum A 2
+5Some arguments can't be parsed!0.057023605191651505
+Perform action:
+> /subtract 2 A
+4Some arguments can't be parsed!0.23413620339270802
+Perform action:
+> /subtract A 2
+3Some arguments can't be parsed!0.6036169001820829
+Perform action:
+> /multiply 2 A
+4Some arguments can't be parsed!0.37118146691892295
+Perform action:
+> /multiply A 2
+3Some arguments can't be parsed!0.7974022872277226
+Perform action:
+> /divide 2 A
+3Some arguments can't be parsed!0.8129414533439959
+Perform action:
+> /divide A 2
+3Some arguments can't be parsed!0.2709238570867074
+Perform action:
+> /pow 2 A
+3Some arguments can't be parsed!0.6139539825091993
+Perform action:
+> /pow A 2
+4Some arguments can't be parsed!0.20331154309649935
+Perform action:
+> /factorial A
+3Some arguments can't be parsed!0.9085323222340407
+Perform action:
+[1;31m
+Start test 10 (132)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /remove A
+3Some arguments can't be parsed!0.5647919271093637
+Perform action:
+> /print A
+3Some arguments can't be parsed!0.6709888137714541
+Perform action:
+> /replace A tmp
+2Some arguments can't be parsed!0.672777039336673
+Perform action:
+> /equals A B
+3Some arguments can't be parsed!0.5493178835904399
+Perform action:
+> /compare A B
+3Some arguments can't be parsed!0.9868026790095435
+Perform action:
+> /concat 2 A
+3Some arguments can't be parsed!0.4524358824360093
+Perform action:
+> /concat A 2
+4Some arguments can't be parsed!0.10046130684438515
+Perform action:
+> /swapCase A
+3Some arguments can't be parsed!0.8458735581299064
+Perform action:
+> /upper A
+4Some arguments can't be parsed!0.22873295851761155
+Perform action:
+> /lower A
+3Some arguments can't be parsed!0.5025236043824398
+Perform action:
+> /reverse A
+3Some arguments can't be parsed!0.3858355111558376
+Perform action:
+> /length A
+4Some arguments can't be parsed!0.20604134124573392
+Perform action:
+[1;31m
+Start test 11 (133)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /getRandom
+!There are no elements memorized
+Perform action:
+[1;31m
+Start test 12 (134)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+> /getRandom
+!There are no elements memorized
+Perform action:
+[1;31m
+Start test 13 (135)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /getRandom
+!There are no elements memorized
+Perform action:
+[1;31m
+Start test 14 (136)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 1
+Element 1 added
+Perform action:
+	> /add 0
+Element 0 added
+Perform action:
+> /divide 0 1
+Division by zero
+Perform action:
+[1;31m
+Start test 15 (137)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element true added
+Perform action:
+> /add false
+Element false added
+Perform action:
+> /add false
+Element false added
+Perform action:
+> /add true
+Element true added
+Perform action:
+> /readFile notfound.txt
+File not found!
+Perform action:
+[1;31m
+Start test 16 (138)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+	> /add 2
+Element 2 added
+Perform action:
+> /readFile notfound.txt
+File not found!
+Perform action:
+[1;31m
+Start test 17 (139)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsATruth
+Element CakeIsATruth added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /readFile notfound.txt
+File not found!
+Perform action:
+[1;31m
+Start test 18 (140)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /regex ())
+"Incorrect regex pattern provided
+Perform action:
+[1;31m
+Start test 19 (141)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /add true
+Element true added
+Perform action:
+> /add true
+Element true added
+Perform action:
+> /add true
+Element true added
+Perform action:
+> /add true
+Element true added
+Perform action:
+> /index false
+There is no such element
+Perform action:
+> /sort up
+?Incorrect argument, possible arguments: ascending, descending
+Perform action:
+> /printAll somehow
+EIncorrect argument, possible arguments: asList, lineByLine, oneLine
+Perform action:
+[1;31m
+Start test 20 (142)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+	> /add 1
+Element 1 added
+Perform action:
+	> /add 1
+Element 1 added
+Perform action:
+	> /add 1
+Element 1 added
+Perform action:
+	> /add 1
+Element 1 added
+Perform action:
+> /index 42
+There is no such element
+Perform action:
+> /sort up
+?Incorrect argument, possible arguments: ascending, descending
+Perform action:
+> /printAll somehow
+EIncorrect argument, possible arguments: asList, lineByLine, oneLine
+Perform action:
+[1;31m
+Start test 21 (143)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /add CakeIsALie
+Element CakeIsALie added
+Perform action:
+> /index CakeIsATruth
+There is no such element
+Perform action:
+> /sort up
+?Incorrect argument, possible arguments: ascending, descending
+Perform action:
+> /printAll somehow
+EIncorrect argument, possible arguments: asList, lineByLine, oneLine
+Perform action:
+[1;31m
+Start test 22 (144)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /frequency
+There are no elements
+Perform action:
+[1;31m
+Start test 23 (145)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+> /frequency
+There are no elements
+Perform action:
+[1;31m
+Start test 24 (146)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /frequency
+There are no elements
+Perform action:
+[1;31m
+Start test 25 (147)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 1
+Perform action:
+> /convertTo number
+No data memorized
+Perform action:
+	> /morse
+No data memorized
+Perform action:
+> /add true
+Element true added
+Perform action:
+> /add false
+Element false added
+Perform action:
+> /add notTrue
+2Some arguments can't be parsed!0.852085201455983
+Perform action:
+> /convertTo something
+8Incorrect argument, possible arguments: string, number
+Perform action:
+[1;31m
+Start test 26 (148)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 3
+Perform action:
+> /regex .+
+0There are no strings that match provided regex
+Perform action:
+> /add apple
+Element apple added
+Perform action:
+> /add grape
+Element grape added
+Perform action:
+> /regex $.^
+0There are no strings that match provided regex
+Perform action:
+[1;31m
+Start test 27 (149)[0m
+Welcome to Data Memory!
+Possible actions:
+1. Memorize booleans
+2. Memorize numbers
+3. Memorize words
+	0. Quit
+> 2
+Perform action:
+
+> /add -1
+Element -1 added
+Perform action:
+> /factorial 0
+'Calculation performed: -1! = undefined
+Perform action:

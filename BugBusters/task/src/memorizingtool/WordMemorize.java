@@ -19,10 +19,10 @@ import java.util.regex.Pattern;
  * With the WordMemorize class in our toolkit, we can confidently keep track of important words and manipulate them as needed.
  */
 public class WordMemorize {
-  static ArrayList<String> list = new ArrayList<>();
+  ArrayList<String> list = new ArrayList<>();
   boolean finished = false;
-  static List<Object> args = new ArrayList<>();
-  static Map<String, Class<?>[]> commands;
+  List<Object> args = new ArrayList<>();
+  Map<String, Class<?>[]> commands;
 
   public WordMemorize() {
     list.clear();
@@ -125,6 +125,21 @@ public class WordMemorize {
     }
   }
 
+  void dispose() {
+    if (list != null) {
+      list.clear();
+      list = null;
+    }
+    if (args != null) {
+      args.clear();
+      args = null;
+    }
+    if (commands != null) {
+      commands.clear();
+      commands = null;
+    }
+  }
+
   void help() {
     System.out.println(
             "===================================================================================================================\n" +
@@ -172,6 +187,7 @@ public class WordMemorize {
 
   void menu() {
     this.finished = true;
+    System.gc();
   }
 
   void add(String element) {

@@ -17,10 +17,10 @@ import java.util.*;
  */
 public class BooleanMemorize {
 
-  static ArrayList<Boolean> list = new ArrayList<>();
+  ArrayList<Boolean> list = new ArrayList<>();
   boolean finished = false;
-  static List<Object> args = new ArrayList<>();
-  static Map<String, Class<?>[]> commands;
+  List<Object> args = new ArrayList<>();
+  Map<String, Class<?>[]> commands;
 
   public BooleanMemorize() {
     list.clear();
@@ -128,6 +128,21 @@ public class BooleanMemorize {
     }
   }
 
+  void dispose() {
+    if (list != null) {
+      list.clear();
+      list = null;
+    }
+    if (args != null) {
+      args.clear();
+      args = null;
+    }
+    if (commands != null) {
+      commands.clear();
+      commands = null;
+    }
+  }
+
   void help() {
     System.out.println(
             "===================================================================================================================\n" +
@@ -173,7 +188,11 @@ public class BooleanMemorize {
   }
 
   void menu() {
-    finished = true;
+    list = null;
+    args = null;
+    commands = null;
+    this.finished = true;
+    System.gc();
   }
 
   void add(Boolean element) {
