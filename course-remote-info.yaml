@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://cogniterra.org/media/attachments/lesson/29793/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: "Thu, 01 Jan 1970 00:00:00 UTC"
+update_date: "Mon, 10 Feb 2025 22:47:12 UTC"
 stages:
   - id: 2184
     step: 31217
@@ -13,7 +13,7 @@ stages:
     is_completed: true
   - id: 2186
     step: 31219
-    is_completed: false
+    is_completed: true
   - id: 2187
     step: 31220
     is_completed: false
@@ -29,6 +29,14 @@ topics:
       theory_id: 19917
     - title: "Write, compile, and run"
       theory_id: 3739
+    - title: Operating systems
+      theory_id: 9704
+    - title: Command line overview
+      theory_id: 8977
+    - title: Parameters and options
+      theory_id: 9746
+    - title: IDE
+      theory_id: 10996
     - title: Immutability
       theory_id: 7929
     - title: Fixed-size array
@@ -117,6 +125,18 @@ topics:
       theory_id: 3609
     - title: Retrieving Class instances
       theory_id: 3554
+    - title: What are bugs
+      theory_id: 5504
+    - title: Debugging overview
+      theory_id: 14368
+    - title: IntelliJ IDEA
+      theory_id: 37202
+    - title: Run and debug with IntelliJ IDEA
+      theory_id: 37206
+    - title: Debugging simple constructs
+      theory_id: 16479
+    - title: IntelliJ IDEA run configurations
+      theory_id: 10630
     - title: Dealing with modifiers
       theory_id: 8104
     - title: Manipulating fields and methods
@@ -184,12 +204,6 @@ topics:
   1:
     - title: "Basic terms: JVM, JRE, JDK"
       theory_id: 3499
-    - title: Operating systems
-      theory_id: 9704
-    - title: Command line overview
-      theory_id: 8977
-    - title: Parameters and options
-      theory_id: 9746
     - title: Hierarchy of exceptions
       theory_id: 3570
     - title: Build tools
@@ -206,8 +220,6 @@ topics:
       theory_id: 35988
     - title: "Dependency management: repositories"
       theory_id: 37189
-    - title: What are bugs
-      theory_id: 5504
     - title: Functional testing
       theory_id: 13438
     - title: Unit testing

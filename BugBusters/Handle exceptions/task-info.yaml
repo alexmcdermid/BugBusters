@@ -33,6 +33,9 @@ files:
   - name: data.txt
     visible: true
     learner_created: true
-feedback_link: https://hyperskill.org/projects/369/stages/2186/implement#comment
-status: Unchecked
+feedback_link: https://hyperskill.org/learn/step/31219#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 11 Feb 2025 20:30:46 UTC"
 record: -1

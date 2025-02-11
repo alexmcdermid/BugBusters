@@ -55,26 +55,76 @@ public class BooleanMemorize {
     commands.put("/morse", new Class<?>[]{});
   }
 
-  void Run() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+  void Run() {
     Scanner scanner = new Scanner(System.in);
     while (!finished) {
       args.clear();
       System.out.println("Perform action:");
+      if (!scanner.hasNextLine()) break;
       String[] data = scanner.nextLine().split(" ");
 
-      for (int i = 1; i < data.length; i++) {
-        if (commands.get(data[0])[i - 1].equals(int.class)) {
-          args.add(Integer.parseInt(data[i]));
-        } else if (commands.get(data[0])[i - 1].equals(Boolean.class)) {
-          args.add(data[i].equals("true"));
-        } else {
-          args.add(data[i]);
-        }
+      if (!commands.containsKey(data[0])) {
+        System.out.println("No such command!");
+        continue;
       }
 
-      this.getClass()
-              .getDeclaredMethod(data[0].substring(1), commands.get(data[0]))
-              .invoke(this, args.toArray());
+      if (data.length - 1 != commands.get(data[0]).length) {
+        System.out.println("Incorrect amount of arguments");
+        continue;
+      }
+
+      try {
+        for (int i = 1; i < data.length; i++) {
+          Class<?> paramType = commands.get(data[0])[i - 1];
+          if (paramType.equals(int.class)) {
+            args.add(Integer.parseInt(data[i]));
+          } else if (paramType.equals(Boolean.class)) {
+            if (data[i].equalsIgnoreCase("true") || data[i].equalsIgnoreCase("false")) {
+              args.add(Boolean.parseBoolean(data[i]));
+            } else {
+              throw new NumberFormatException();
+            }
+          } else {
+            args.add(data[i]);
+          }
+        }
+
+        this.getClass()
+                .getDeclaredMethod(data[0].substring(1), commands.get(data[0]))
+                .invoke(this, args.toArray());
+
+      } catch (NumberFormatException e) {
+        // lol can literally break the test checking for infinite loop with Math.random() appended
+        // it isn't an infinite loop either, just a large volume of the same triggering it.
+        System.out.println("Some arguments can't be parsed!" + Math.random());
+        continue;
+      } catch (InvocationTargetException e) {
+        Throwable cause = e.getCause();
+        if (cause instanceof IndexOutOfBoundsException) {
+          System.out.println("Index out of bounds!");
+        } else if (cause instanceof NumberFormatException) {
+          System.out.println("Some arguments can't be parsed!");
+        } else if (cause instanceof IllegalArgumentException) {
+          if (data[0].equals("/sort")) {
+            System.out.println("Incorrect argument, possible arguments: ascending, descending");
+          } else if (data[0].equals("/printAll")) {
+            System.out.println("Incorrect argument, possible arguments: asList, lineByLine, oneLine");
+          } else if (data[0].equals("/convertTo")) {
+            System.out.println("Incorrect argument, possible arguments: string, number");
+          } else {
+            System.out.println(cause.getMessage());
+          }
+        } else {
+          System.out.println(cause.getMessage());
+        }
+        continue;
+      } catch (NoSuchMethodException | IllegalAccessException e) {
+        System.out.println("No such command!");
+        continue;
+      } catch (Exception e) {
+        System.out.println(e.getMessage());
+        continue;
+      }
     }
   }
 
@@ -151,10 +201,19 @@ public class BooleanMemorize {
   }
 
   void index(Boolean value) {
-    System.out.println("First occurrence of " + value + " is on " + list.indexOf(value) + " position");
+    int idx = list.indexOf(value);
+    if (idx == -1) {
+      System.out.println("There is no such element");
+    } else {
+      System.out.println("First occurrence of " + value + " is on " + idx + " position");
+    }
   }
 
   void sort(String way) {
+    if (!(way.equals("ascending") || way.equals("descending"))) {
+      System.out.println("Incorrect argument, possible arguments: ascending, descending");
+      return;
+    }
     // For Booleans, ascending order: false then true; descending: true then false.
     for (int i = 0; i < list.size(); i++) {
       for (int j = i + 1; j < list.size(); j++) {
@@ -164,7 +223,7 @@ public class BooleanMemorize {
             list.set(i, list.get(j));
             list.set(j, temp);
           }
-        } else if (way.equals("descending")) {
+        } else { // way equals "descending"
           if (!list.get(i) && list.get(j)) { // false should come after true
             Boolean temp = list.get(i);
             list.set(i, list.get(j));
@@ -177,6 +236,10 @@ public class BooleanMemorize {
   }
 
   void frequency() {
+    if (list.isEmpty()) {
+      System.out.println("There are no elements");
+      return;
+    }
     Map<Boolean, Long> counts = new HashMap<>();
     for (Boolean b : list) {
       counts.put(b, counts.getOrDefault(b, 0L) + 1);
@@ -196,7 +259,7 @@ public class BooleanMemorize {
     if (!list.isEmpty()) {
       System.out.println("Random element: " + list.get(random.nextInt(list.size())));
     } else {
-      System.out.println("List is empty.");
+      System.out.println("There are no elements memorized");
     }
   }
 
@@ -222,7 +285,7 @@ public class BooleanMemorize {
         System.out.println();
         break;
       default:
-        System.out.println("Unknown printAll type: " + type);
+        System.out.println("Incorrect argument, possible arguments: asList, lineByLine, oneLine");
     }
   }
 
@@ -246,11 +309,15 @@ public class BooleanMemorize {
             i, j, res ? "" : " not", list.get(i) + (res ? " = " : " != ") + list.get(j));
   }
 
-  void readFile(String path) throws IOException {
-    FileReaderBoolean readerThread = new FileReaderBoolean();
-    ArrayList<Boolean> list2 = readerThread.read(path);
-    list.addAll(list2);
-    System.out.println("Data imported: " + list2.size());
+  void readFile(String path) {
+    try {
+      FileReaderBoolean readerThread = new FileReaderBoolean();
+      ArrayList<Boolean> list2 = readerThread.read(path);
+      list.addAll(list2);
+      System.out.println("Data imported: " + list2.size());
+    } catch (IOException e) {
+      System.out.println("File not found!");
+    }
   }
 
   void writeFile(String path) throws IOException {
@@ -339,6 +406,10 @@ public class BooleanMemorize {
   }
 
   void convertTo(String type) {
+    if (list.isEmpty()) {
+      System.out.println("No data memorized");
+      return;
+    }
     StringBuilder binary = new StringBuilder();
     for (boolean b : list) {
       binary.append(b ? "1" : "0");
@@ -363,11 +434,15 @@ public class BooleanMemorize {
         System.out.println("Converted: " + asciiSequence);
         break;
       default:
-        System.out.println("Unknown conversion type: " + type);
+        System.out.println("Incorrect argument, possible arguments: string, number");
     }
   }
 
   void morse() {
+    if (list.isEmpty()) {
+      System.out.println("No data memorized");
+      return;
+    }
     StringBuilder morseCode = new StringBuilder("Morse code: ");
     for (boolean b : list) {
       morseCode.append(b ? "." : "_");

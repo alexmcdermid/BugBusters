@@ -56,22 +56,70 @@ public class NumberMemorize {
     commands.put("/average", new Class<?>[]{});
   }
 
-  void Run() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+  void Run() {
     Scanner scanner = new Scanner(System.in);
     while (!finished) {
       args.clear();
       System.out.println("Perform action:");
+      if (!scanner.hasNextLine()) break;
       String[] data = scanner.nextLine().split(" ");
-      for (int i = 1; i < data.length; i++) {
-        if (commands.get(data[0])[i - 1].equals(int.class)) {
-          args.add(Integer.parseInt(data[i]));
-        } else {
-          args.add(data[i]);
-        }
+
+      if (!commands.containsKey(data[0])) {
+        System.out.println("No such command!");
+        continue;
       }
-      this.getClass()
-              .getDeclaredMethod(data[0].substring(1), commands.get(data[0]))
-              .invoke(this, args.toArray());
+
+      if (data.length - 1 != commands.get(data[0]).length) {
+        System.out.println("Incorrect amount of arguments");
+        continue;
+      }
+
+      try {
+        for (int i = 1; i < data.length; i++) {
+          Class<?> paramType = commands.get(data[0])[i - 1];
+          if (paramType.equals(int.class)) {
+            args.add(Integer.parseInt(data[i]));
+          } else if (paramType.equals(Boolean.class)) {
+            args.add(Boolean.parseBoolean(data[i]));
+          } else {
+            args.add(data[i]);
+          }
+        }
+
+        this.getClass()
+                .getDeclaredMethod(data[0].substring(1), commands.get(data[0]))
+                .invoke(this, args.toArray());
+
+      } catch (NumberFormatException e) {
+        System.out.println("Some arguments can't be parsed!" + Math.random());
+        continue;
+      } catch (InvocationTargetException e) {
+        Throwable cause = e.getCause();
+        if (cause instanceof IndexOutOfBoundsException) {
+          System.out.println("Index out of bounds!");
+        } else if (cause instanceof NumberFormatException) {
+          System.out.println("Some arguments can't be parsed!");
+        } else if (cause instanceof IllegalArgumentException) {
+          if (data[0].equals("/sort")) {
+            System.out.println("Incorrect argument, possible arguments: ascending, descending");
+          } else if (data[0].equals("/printAll")) {
+            System.out.println("Incorrect argument, possible arguments: asList, lineByLine, oneLine");
+          } else if (data[0].equals("/convertTo")) {
+            System.out.println("Incorrect argument, possible arguments: string, number");
+          } else {
+            System.out.println(cause.getMessage());
+          }
+        } else {
+          System.out.println(cause.getMessage());
+        }
+        continue;
+      } catch (NoSuchMethodException | IllegalAccessException e) {
+        System.out.println("No such command!");
+        continue;
+      } catch (Exception e) {
+        System.out.println(e.getMessage());
+        continue;
+      }
     }
   }
 
@@ -150,19 +198,27 @@ public class NumberMemorize {
   }
 
   void index(int value) {
-    int i = list.indexOf(value);
-    System.out.println("First occurrence of " + value + " is on " + i + " position");
+    int idx = list.indexOf(value);
+    if (idx == -1) {
+      System.out.println("There is no such element");
+    } else {
+      System.out.println("First occurrence of " + value + " is on " + idx + " position");
+    }
   }
 
   void sort(String way) {
+    if (!(way.equalsIgnoreCase("ascending") || way.equalsIgnoreCase("descending"))) {
+      System.out.println("Incorrect argument, possible arguments: ascending, descending");
+      return;
+    }
     // Use a simple bubble sort for clarity.
     for (int i = 0; i < list.size(); i++) {
       for (int j = i + 1; j < list.size(); j++) {
-        if ("ascending".equalsIgnoreCase(way) && list.get(i) > list.get(j)) {
+        if (way.equalsIgnoreCase("ascending") && list.get(i) > list.get(j)) {
           int temp = list.get(i);
           list.set(i, list.get(j));
           list.set(j, temp);
-        } else if ("descending".equalsIgnoreCase(way) && list.get(i) < list.get(j)) {
+        } else if (way.equalsIgnoreCase("descending") && list.get(i) < list.get(j)) {
           int temp = list.get(i);
           list.set(i, list.get(j));
           list.set(j, temp);
@@ -173,9 +229,13 @@ public class NumberMemorize {
   }
 
   void frequency() {
+    if (list.isEmpty()) {
+      System.out.println("There are no elements");
+      return;
+    }
     Map<Integer, Long> counts = new HashMap<>();
-    for (int i : list) {
-      counts.put(i, counts.getOrDefault(i, 0L) + 1);
+    for (Integer b : list) {
+      counts.put(b, counts.getOrDefault(b, 0L) + 1);
     }
     System.out.println("Frequency:");
     for (Map.Entry<Integer, Long> entry : counts.entrySet()) {
@@ -192,7 +252,7 @@ public class NumberMemorize {
     if (!list.isEmpty()) {
       System.out.println("Random element: " + list.get(random.nextInt(list.size())));
     } else {
-      System.out.println("List is empty.");
+      System.out.println("There are no elements memorized");
     }
   }
 
@@ -217,6 +277,8 @@ public class NumberMemorize {
         }
         System.out.println();
         break;
+      default:
+        System.out.println("Incorrect argument, possible arguments: asList, lineByLine, oneLine");
     }
   }
 
@@ -240,11 +302,15 @@ public class NumberMemorize {
             i, j, res ? "" : " not", list.get(i) + (res ? " = " : " != ") + list.get(j));
   }
 
-  void readFile(String path) throws IOException {
-    FileReaderInteger readerThread = new FileReaderInteger();
-    ArrayList<Integer> list2 = readerThread.read(path);
-    list.addAll(list2);
-    System.out.println("Data imported: " + list2.size());
+  void readFile(String path) {
+    try {
+      FileReaderInteger readerThread = new FileReaderInteger();
+      ArrayList<Integer> list2 = readerThread.read(path);
+      list.addAll(list2);
+      System.out.println("Data imported: " + list2.size());
+    } catch (IOException e) {
+      System.out.println("File not found!");
+    }
   }
 
   void writeFile(String path) throws IOException {
@@ -309,6 +375,10 @@ public class NumberMemorize {
 
   void divide(int i, int j) {
     int a = list.get(i), b = list.get(j);
+    if (b == 0) {
+      System.out.println("Division by zero");
+      return;
+    }
     double res = (double) a / b;
     System.out.printf("Calculation performed: %d / %d = %f\n", a, b, res);
   }
@@ -334,16 +404,18 @@ public class NumberMemorize {
 
   void factorial(int index) {
     int n = list.get(index);
+    if (n < 0) {
+      System.out.printf("Calculation performed: %d! = undefined\n", n);
+      return;
+    }
     if (n <= 1) {
       System.out.printf("Calculation performed: %d! = 1\n", n);
       return;
     }
-
     long res = 1;
-    int i = 2;
-    do {
-      res *= i++;
-    } while (i <= n);
+    for (int i = 2; i <= n; i++) {
+      res *= i;
+    }
     System.out.printf("Calculation performed: %d! = %d\n", n, res);
   }
 
